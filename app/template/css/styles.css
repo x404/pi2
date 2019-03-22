@@ -297,6 +297,36 @@ template {
 [hidden] {
   display: none; }
 
+/* font-family: "SegoeUIRegular"; */
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "SegoeUIBold"; */
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIBoldItalic";
+  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
+  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
 *,
 *::before,
 *::after {
@@ -3369,16 +3399,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 14px;
   font-size: 1.4rem;
-  flex-flow: column;
-  font-display: swap;
-  height: 100vh; }
+  font-display: swap; }
 
 html, body {
   height: 100%; }
@@ -3387,13 +3410,46 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
+.d-grid {
+  display: flex; }
+
+.main-grid {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .main-grid .main {
+    flex-grow: 1; }
+
+@supports (display: grid) {
+  .d-grid {
+    display: grid; }
+  .main-grid {
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "main" "plate" "footer";
+    grid-template-rows: auto 1fr auto auto; }
+  @media (min-width: 992px) {
+    .grid-lg-2 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 30px; }
+    .grid-lg-3 {
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 30px; }
+    .d-lg-grid {
+      display: grid !important; } }
+  @media (min-width: 1250px) {
+    .grid-xl-6 {
+      grid-template-columns: repeat(6, 1fr); } } }
+
 .outerwrapper {
   -webkit-flex: 1;
   flex: 1; }
 
 /*** standart classes *****/
 a {
-  color: #020000; }
+  color: #020000;
+  transition: .3s; }
 
 h1 {
   font-size: 2.5rem; }
@@ -3406,36 +3462,6 @@ h3 {
 
 .regular {
   font-family: "SegoeUIRegular"; }
-
-/* font-family: "SegoeUIRegular"; */
-@font-face {
-  font-family: "SegoeUIRegular";
-  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
-  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-/* font-family: "SegoeUIBold"; */
-@font-face {
-  font-family: "SegoeUIBold";
-  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
-  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "SegoeUIItalic";
-  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
-  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "SegoeUIBoldItalic";
-  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
-  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
 
 strong,
 .bold {
@@ -3467,15 +3493,6 @@ em strong {
   display: block;
   position: absolute; }
 
-.form-control {
-  border: 1px solid #f4f4f4;
-  border-radius: 0;
-  margin-top: 0.6rem;
-  font-size: 16px; }
-  .form-control:focus, .form-control:active {
-    border-color: #666;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3); }
-
 /* =header
 ---------------------------*/
 /* =/header
@@ -3484,21 +3501,6 @@ em strong {
 ---------------------------*/
 /* =/navigation
 ---------------------------*/
-.owl-carousel .owl-controls {
-  position: absolute;
-  width: 100%;
-  top: 115px; }
-  .owl-carousel .owl-controls .owl-buttons .owl-prev,
-  .owl-carousel .owl-controls .owl-buttons .owl-next {
-    background: url(../images/prevnext.png) no-repeat left top;
-    width: 65px;
-    height: 65px;
-    position: absolute; }
-  .owl-carousel .owl-controls .owl-buttons .owl-prev {
-    left: -110px; }
-  .owl-carousel .owl-controls .owl-buttons .owl-next {
-    right: -110px; }
-
 /* =main
 ---------------------------*/
 .visually-hidden {
@@ -3507,6 +3509,36 @@ em strong {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0); }
+
+/* font-family: "SegoeUIRegular"; */
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "SegoeUIBold"; */
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIBoldItalic";
+  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
+  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
 /* =mobile-menu
 ---------------------------*/

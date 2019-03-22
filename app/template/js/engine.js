@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	// mobile-menu
 	$('#navbar').each(function(){
-		var $this = $(this),
+		const $this = $(this),
 			$link = $('.navbar-toggle'),
 			$close = $('.close-menu'),
 

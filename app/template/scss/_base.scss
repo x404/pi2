@@ -55,6 +55,11 @@ input::-moz-focus-inner{
 	padding: 0;
 }
 
+
+.d-grid{
+	display: flex;
+}
+
 .main-grid{
 	height: 100%;
 	display: flex;
@@ -64,18 +69,42 @@ input::-moz-focus-inner{
 	}		
 }
 
-
 @supports (display:grid) {
+	.d-grid{
+		display: grid;
+	}
 	.main-grid{
 		height: auto;
 		min-height: 100vh;
 		display: grid;
 		grid-template-areas: "header"
 							 "main"
+							 "plate"
 							 "footer";
-		grid-template-rows: auto 1fr auto;			
+		grid-template-rows: auto 1fr auto auto;
+	}
+
+
+	@media (min-width: 992px){
+		.grid-lg-2{
+			grid-template-columns: repeat(2, 1fr);
+			grid-row-gap: 30px;
+		}	
+		.grid-lg-3{
+			grid-template-columns: repeat(3, 1fr);
+			grid-row-gap: 30px;
+		}		
+		.d-lg-grid{
+			display: grid !important;
+		}
+	}
+	@media (min-width: 1250px){
+		.grid-xl-6{
+			grid-template-columns: repeat(6, 1fr)
+		}		
 	}
 }
+
 
 
 .outerwrapper{
@@ -85,7 +114,7 @@ input::-moz-focus-inner{
 
 /*** standart classes *****/
 p{}
-a{color:#020000}
+a{color:#020000; transition: .3s}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
@@ -94,46 +123,7 @@ h3{font-size:1.6rem}
 	font-family: "SegoeUIRegular";	
 }
 
-/* font-family: "SegoeUIRegular"; */
-@font-face {
-	font-family: "SegoeUIRegular";
-	src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
-	src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
-	url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-/* font-family: "SegoeUIBold"; */
-@font-face {
-	font-family: "SegoeUIBold";
-	src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
-	src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
-	url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
 
-@font-face {
-	font-family: "SegoeUIItalic";
-	src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
-	src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
-	url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "SegoeUIBoldItalic";
-	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
-	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"),
-	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
 
 strong,
 .bold{
@@ -197,31 +187,6 @@ header{
 /* =/navigation
 ---------------------------*/
 
-
-.owl-carousel{
-	.owl-controls{
-		position: absolute;
-		width: 100%;
-		top: 115px;
-		.owl-buttons{
-			.owl-prev,
-			.owl-next{
-				background: url(../images/prevnext.png) no-repeat left top;
-				width: 65px;
-				height: 65px;
-				position: absolute;
-			}
-			.owl-prev{
-				left: -110px;
-			}
-			.owl-next{
-				// @include sprite;
-				// .rotation(180deg);
-				right: -110px;
-			}
-		}
-	}
-}
 
 /* =main
 ---------------------------*/

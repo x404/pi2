@@ -20,7 +20,7 @@
 <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<title>Главная</title>
+<title>Главная.</title>
 <link rel="stylesheet" href="/template/css/styles.min.css" />
 <script src="/template/js/libs.min.js"></script>
 
@@ -31,14 +31,11 @@
 <body>
 
 <div class="main-grid">
-	<!-- =top -->
-	<div class="top">
-
-	</div>
-	<!-- =/top -->
-
 	<!-- =header -->
 	<header class="header">
+		<div class="logo">
+			ПРОЕКТНЫЙ ПИ-2 ИНСТИТУТ 2
+		</div>
 		<!-- =nav -->
 		<div class="navmenu">
 			<div class="navmenu__inner">
@@ -46,7 +43,7 @@
 					<div class="mainnav__list">
 						<ul class="nav nav-tabs">
 							<li class="folder"> 
-								<a href="#">Меню 1</a>
+								<a href="#">Компания</a>
 								<div class="subnav">
 									<ul>
 										<li><a href="#">Меню 1</a></li>
@@ -57,19 +54,18 @@
 								</div>
 							</li>
 							<li class="folder">
-								<a href="#">Меню 2</a>
+								<a href="#">Деятельность</a>
 								<div class="subnav">
 									<ul>
-										<li><a href="#">Меню 1</a></li>
-										<li><a href="#">Меню 2</a></li>
-										<li><a href="#">Меню 3</a></li>
-										<li><a href="#">Меню 4</a></li>
+										<li><a href="#">проектирование</a></li>
+										<li><a href="#">визуализация</a></li>
+										<li><a href="#">изыскания</a></li>
+										<li><a href="#">bim</a></li>
 									</ul>
 								</div>
 							</li>
-							<li><a href="#">Меню 3</a></li>
-							<li><a href="#">Меню 4</a></li>
-							<li><a href="#">Меню 5</a></li>
+							<li><a href="#">Проекты</a></li>
+							<li><a href="#">BIM</a></li>
 						</ul>
 						<div class="show-sm">
 							<a href="tel:+123456789">+1234 56-78-89</a>
@@ -95,16 +91,51 @@
 	</div>
 	<!-- =/main -->
 
+
+	<!-- =plate -->
+	<div class="plate text-center">
+		<div class="container">
+			19019, г. Москва, Пречистенская наб., д.45/1 | +7 (495) 644-02-00 (1344) | <a href="mailto:pi2@gms.ru" title="">pi2@gms.ru</a>			
+		</div>
+	</div>
+	<!-- =/plate -->
+
 	<!-- =footer -->
 	<footer class="footer">
 		<div class="container">
-			<div class="d-flex justify-content-between">
-				<div class="copyright">
-					Copyright
+			<div class="d-flex ">
+				<div class="logo">
+					<img src="/template/images/logo.png" alt="ПИ-2" />
 				</div>
-				<div class="creators">
-					<p>Дизайн сайта <a href="https://kreotif.com" title="Дизайн сайтов" target="_blank">DA Kreotif</a></p>
-					<p>Программирование сайта - <a href="https://proverstka.com.ua" title="Создание сайтов" target="_blank">Провёрстка</a></p>
+				<div class="footer__menu d-flex">
+					<div class="column">
+						<dl>
+							<dt class="title">Компания</dt>
+							<dd><a href="#" title="">о нас</a></dd>
+							<dd><a href="#" title="">история</a></dd>
+							<dd><a href="#" title="">лицензии</a></dd>
+							<dd><a href="#" title="">отзывы</a></dd>
+							<dd><a href="#" title="">акционерам</a></dd>
+							<dd><a href="#" title="">вакансии</a></dd>
+							<dd><a href="#" title="">новости</a></dd>
+							<dd><a href="#" title="">контакты</a></dd>
+						</dl>
+					</div>
+					<div class="column">
+						<dl>
+							<dt class="title">Компания</dt>
+							<dd><a href="#" title="">проектирование</a></dd>
+							<dd><a href="#" title="">визуализация</a></dd>
+							<dd><a href="#" title="">изыскания</a></dd>
+							<dd><a href="#" title="">bim</a></dd>
+						</dl>
+					</div>
+					<div class="column">
+						<a href="#" title="" class="title">Проекты</a>
+					</div>
+					<div class="column">
+						<a href="#" title="" class="title">BIM</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -115,5 +146,6 @@
 <div id="outdated"></div>
 <script type="text/javascript" src="/template/js/slick.min.js"></script>
 <script src="/template/js/engine.js"></script>
+<script src="/template/js/engine2.js"></script>
 </body>
 </html>
