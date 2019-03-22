@@ -297,35 +297,17 @@ template {
 [hidden] {
   display: none; }
 
-/* font-family: "SegoeUIRegular"; */
 @font-face {
-  font-family: "SegoeUIRegular";
-  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
-  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-/* font-family: "SegoeUIBold"; */
-@font-face {
-  font-family: "SegoeUIBold";
-  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
-  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'Avanti';
+  src: local("Avanti"), url("../fonts/Avanti/Avanti.woff2") format("woff2"), url("../fonts/Avanti/Avanti.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: "SegoeUIItalic";
-  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
-  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "SegoeUIBoldItalic";
-  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
-  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'Avanti';
+  src: local("Avanti Bold"), local("AvantiBold"), url("../fonts/AvantiBold/AvantiBold.woff2") format("woff2"), url("../fonts/AvantiBold/AvantiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
 
 *,
 *::before,
@@ -3399,6 +3381,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  font-family: Avanti;
   font-size: 14px;
   font-size: 1.4rem;
   font-display: swap; }
@@ -3448,7 +3431,7 @@ input::-moz-focus-inner {
 
 /*** standart classes *****/
 a {
-  color: #020000;
+  color: #666;
   transition: .3s; }
 
 h1 {
@@ -3495,10 +3478,32 @@ em strong {
 
 /* =header
 ---------------------------*/
+.header {
+  padding: 12rem 0 12rem; }
+
+.logo {
+  color: #666;
+  font-size: 3rem; }
+
 /* =/header
 ---------------------------*/
 /* =navigation
 ---------------------------*/
+.navmenu {
+  font-size: 1.8rem;
+  margin-top: 11rem; }
+  .navmenu .nav {
+    display: flex;
+    justify-content: center; }
+    .navmenu .nav > li {
+      margin: 0 2.4rem; }
+      .navmenu .nav > li a {
+        color: #000; }
+        .navmenu .nav > li a:hover {
+          text-decoration-color: #30797a; }
+  .navmenu .subnav {
+    display: none; }
+
 /* =/navigation
 ---------------------------*/
 /* =main
@@ -3510,35 +3515,17 @@ em strong {
   overflow: hidden;
   clip: rect(0 0 0 0); }
 
-/* font-family: "SegoeUIRegular"; */
 @font-face {
-  font-family: "SegoeUIRegular";
-  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
-  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-/* font-family: "SegoeUIBold"; */
-@font-face {
-  font-family: "SegoeUIBold";
-  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
-  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'Avanti';
+  src: local("Avanti"), url("../fonts/Avanti/Avanti.woff2") format("woff2"), url("../fonts/Avanti/Avanti.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: "SegoeUIItalic";
-  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
-  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "SegoeUIBoldItalic";
-  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
-  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'Avanti';
+  src: local("Avanti Bold"), local("AvantiBold"), url("../fonts/AvantiBold/AvantiBold.woff2") format("woff2"), url("../fonts/AvantiBold/AvantiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
 
 /* =mobile-menu
 ---------------------------*/

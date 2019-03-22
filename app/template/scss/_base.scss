@@ -2,15 +2,7 @@
 html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
 header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
-$color1:#000;
-$color2:#fff;
 
-$color3:#f4f4f4;
-$color4:#1a237e;
-$color5:#666;
-$color6:#ff5722;
-$color7:#80bbde;
-$color8:#292929;
 
 
 * {
@@ -34,6 +26,7 @@ html {
 
 
 body{
+	font-family: Avanti;
 	@include font-size(1.4);
 	font-display: swap;
 	// height: 100vh;
@@ -114,7 +107,7 @@ input::-moz-focus-inner{
 
 /*** standart classes *****/
 p{}
-a{color:#020000; transition: .3s}
+a{color: $color3; transition: .3s}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
@@ -174,7 +167,14 @@ em strong
 
 /* =header
 ---------------------------*/
-header{
+.header{
+	padding: 12rem 0 12rem;
+}
+
+.logo{
+	color: $color3;
+	// font-weight: bold;
+	font-size: 3rem;
 }
 
 /* =/header
@@ -184,6 +184,26 @@ header{
 
 /* =navigation
 ---------------------------*/
+.navmenu{
+	font-size: 1.8rem;
+	margin-top: 11rem;
+	.nav{
+		display: flex;
+		justify-content: center;
+		& > li{
+			margin: 0 2.4rem;
+			a{
+				color: $color1;
+				&:hover{
+					text-decoration-color: $color4;
+				}
+			}
+		}
+	}
+	.subnav{
+		display: none;
+	}
+}
 /* =/navigation
 ---------------------------*/
 
