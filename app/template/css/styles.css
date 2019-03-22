@@ -3306,10 +3306,14 @@ a.text-dark:hover, a.text-dark:focus {
   .webp .homepage .about {
     background-image: url(../images/bg/bg-3.webp); }
 
+.webp .history {
+  background-image: url(../images/bg/bg-4.webp); }
+
 .homepage,
 .inner,
 .modal-menu,
-.about {
+.about,
+.history {
   background-repeat: no-repeat; }
 
 .bg-right {
@@ -3321,6 +3325,9 @@ a.text-dark:hover, a.text-dark:focus {
   .homepage .about {
     background-image: url(../images/bg/bg-3.jpg);
     background-position: right top; }
+
+.history {
+  background-image: url(../images/bg/bg-4.jpg); }
 
 .container {
   margin-right: auto;
@@ -3473,12 +3480,14 @@ h3 {
   .tdn:hover {
     text-decoration: underline; }
 
-.tdu {
+.tdu, .plate a, .footer .copyright a,
+.footer .creators a {
   text-decoration: underline; }
-  .tdu:hover {
+  .tdu:hover, .plate a:hover, .footer .copyright a:hover,
+  .footer .creators a:hover {
     text-decoration: none; }
 
-.before, .btn:before, .grad-line:after {
+.before, .btn:before, .footer .projects__item a:before, .footer .projects__item a:after, .grad-line:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3487,9 +3496,9 @@ h3 {
   border: 1px solid;
   font-size: 1.4rem;
   margin: 0 1.3rem;
-  padding: 1rem 2.3rem;
+  padding: .3rem 2.3rem;
   margin-left: 1.3rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   position: relative;
   display: inline-block; }
   .btn-green {
@@ -3510,7 +3519,7 @@ h3 {
 /* =header
 ---------------------------*/
 .header {
-  padding: 12rem 0 12rem; }
+  padding: 9.5rem 0 17rem; }
 
 .logo {
   color: #666;
@@ -3522,7 +3531,7 @@ h3 {
 ---------------------------*/
 .navmenu {
   font-size: 1.8rem;
-  margin-top: 11rem; }
+  margin-top: 10.5rem; }
   .navmenu .nav {
     display: flex;
     justify-content: center; }
@@ -3546,6 +3555,105 @@ h3 {
   overflow: hidden;
   clip: rect(0 0 0 0); }
 
+/* =plate
+---------------------------*/
+.plate {
+  background-color: #30797a;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-top: 1.6rem;
+  padding: 2.5rem 0;
+  text-align: center; }
+  .plate a {
+    color: currentColor; }
+
+/* =/plate
+---------------------------*/
+/* =footer
+---------------------------*/
+.footer {
+  padding: 2.5rem 0 1rem;
+  font-size: 1.5rem; }
+  .footer .title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 1.8rem; }
+    .footer .title a {
+      color: #000;
+      border-bottom: 1px solid #30797a; }
+      .footer .title a:hover {
+        text-decoration: none;
+        border-bottom: none; }
+  .footer .logo {
+    display: flex;
+    align-items: center; }
+  .footer dd {
+    margin-bottom: .2rem; }
+  .footer__menu a:hover {
+    color: #666;
+    text-decoration-color: #30797a; }
+  .footer .projects__item {
+    margin-right: 1.8rem;
+    margin-bottom: 1.8rem;
+    position: relative; }
+    .footer .projects__item a {
+      display: block; }
+      .footer .projects__item a:before, .footer .projects__item a:after {
+        opacity: 0;
+        transition: opacity .3s; }
+      .footer .projects__item a:before {
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(48, 121, 122, 0.5); }
+      .footer .projects__item a:after {
+        background: url(../images/arrow-more.png) no-repeat center;
+        height: 40px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px; }
+      .footer .projects__item a:hover {
+        opacity: 1; }
+        .footer .projects__item a:hover:before, .footer .projects__item a:hover:after {
+          opacity: 1; }
+  .footer .social a {
+    border-radius: 50%;
+    border: 1px solid #ababab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.8rem;
+    width: 3.8rem; }
+    .footer .social a img {
+      filter: grayscale(1) brightness(1.2);
+      transition: filter .3s; }
+    .footer .social a:hover {
+      border-color: #30797a; }
+      .footer .social a:hover img {
+        filter: none; }
+  .footer .social li {
+    margin-right: .6rem; }
+    .footer .social li:last-child {
+      margin-right: 0; }
+  .footer .copyright,
+  .footer .creators {
+    font-size: 1.3rem; }
+    .footer .copyright a,
+    .footer .creators a {
+      color: #30797a; }
+  .footer .copyright {
+    margin-top: 4.5rem; }
+  .footer .creators {
+    font-size: 1.3rem;
+    margin-top: 3.5rem; }
+    .footer .creators p {
+      white-space: nowrap; }
+
+/* =/footer
+---------------------------*/
 @font-face {
   font-family: 'Avanti';
   src: local("Avanti"), url("../fonts/Avanti/Avanti.woff2") format("woff2"), url("../fonts/Avanti/Avanti.woff") format("woff");
@@ -3563,7 +3671,7 @@ h3 {
   font-size: 3.6rem;
   line-height: 1.2;
   padding-left: 42%;
-  padding-top: 20rem; }
+  padding-top: 24rem; }
   .slogan .num {
     font-weight: bold;
     font-size: 15rem; }

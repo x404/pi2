@@ -167,9 +167,9 @@ em strong
 	border: 1px solid;
 	font-size: 1.4rem;
 	margin: 0 1.3rem;
-	padding: 1rem 2.3rem;
+	padding: .3rem 2.3rem;
 	margin-left: 1.3rem;
-	margin-top: 4rem;
+	margin-top: 2rem;
 	position: relative;
 	display: inline-block;
 	&-green{
@@ -200,7 +200,7 @@ em strong
 /* =header
 ---------------------------*/
 .header{
-	padding: 12rem 0 12rem;
+	padding: 9.5rem 0 17rem;
 }
 
 .logo{
@@ -218,7 +218,7 @@ em strong
 ---------------------------*/
 .navmenu{
 	font-size: 1.8rem;
-	margin-top: 11rem;
+	margin-top: 10.5rem;
 	.nav{
 		display: flex;
 		justify-content: center;
@@ -257,3 +257,157 @@ em strong
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
+
+
+
+
+/* =plate
+---------------------------*/
+.plate{
+	background-color: $color4;
+	color: $color2;
+	font-size: 1.8rem;
+	margin-top: 1.6rem;
+	padding: 2.5rem 0;
+	text-align: center;
+	a{
+		color: currentColor;
+		@extend .tdu;
+	}
+}
+/* =/plate
+---------------------------*/
+
+
+
+/* =footer
+---------------------------*/
+.footer{
+	padding: 2.5rem 0 1rem;
+	font-size: 1.5rem;
+	.title{
+		font-size: 1.8rem;
+		font-weight: normal;
+		line-height: 1.2;
+		margin-bottom: 1.8rem;
+		a{
+			color: $color1;
+			border-bottom: 1px solid $color4;
+			&:hover{
+				text-decoration: none;
+				border-bottom: none;
+			}
+		}
+	}
+
+	.logo{
+		display: flex;
+		align-items: center;
+	}
+
+	dd{
+		margin-bottom: .2rem;
+	}
+
+	&__menu{
+		a{
+			&:hover{
+				color: $color3;
+				text-decoration-color: $color4;
+			}
+		}
+	}
+	.projects{
+		&__item{
+			margin-right: 1.8rem;
+			margin-bottom: 1.8rem;
+			position: relative;
+			a{
+				display: block;
+				&:before,
+				&:after{
+					@extend .before;
+					opacity: 0;
+					transition: opacity .3s;		
+				}
+				&:before{
+					left: 0;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					background-color: rgba(48, 121, 122, .5);
+				}
+				&:after{
+					background: url(../images/arrow-more.png) no-repeat center;
+					height: 40px;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					width: 40px;
+				}
+				&:hover{
+					opacity: 1;
+					&:before,
+					&:after{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	.social{
+		a{
+			border-radius: 50%;
+			border: 1px solid #ababab;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 3.8rem;
+			width: 3.8rem;
+			img{
+				filter: grayscale(1) brightness(1.2);
+				transition: filter .3s;
+			}
+			&:hover{
+				border-color: $color4;
+				img{
+					filter: none;
+				}
+			}
+		}
+		li{
+			margin-right: .6rem;
+			&:last-child{
+				margin-right: 0;
+			}			
+		}
+	}
+
+	.copyright,
+	.creators
+	{
+		font-size: 1.3rem;
+		a{
+			@extend .tdu;
+			color: $color4;
+		}
+	}
+
+	.copyright{
+		margin-top: 4.5rem;
+	}
+
+
+	.creators{
+		font-size: 1.3rem;
+		margin-top: 3.5rem;
+		p{
+			white-space: nowrap;
+		}
+	}
+}
+/* =/footer
+---------------------------*/
+
+
