@@ -1,0 +1,37 @@
+.webp{
+	.homepage{
+		background-image: url(../images/bg/bg-1.webp);
+		.about{
+			background-image: url(../images/bg/bg-3.webp);			
+		}
+	}
+}
+
+
+
+
+
+.homepage,
+.inner,
+.modal-menu,
+.about
+{
+	background-repeat: no-repeat;
+	// background-size: cover;
+}
+
+.bg-right{
+	background-position: right;
+}
+
+.homepage
+{
+	background-image: url(../images/bg/bg-1.jpg);
+	background-position: left 80px;
+	.about{
+		background-image: url(../images/bg/bg-3.jpg);
+		background-position: right top;
+	}
+}
+
+

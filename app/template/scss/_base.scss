@@ -108,32 +108,31 @@ input::-moz-focus-inner{
 /*** standart classes *****/
 p{}
 a{color: $color3; transition: .3s}
-h1{font-size:2.5rem}
+h1{
+	font-size:3rem;
+	color: $color3;
+	text-transform: uppercase;
+	span{
+		border-bottom: 1px solid $color4;
+	}
+}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
 
-.regular{
-	font-family: "SegoeUIRegular";	
-}
+
 
 
 
 strong,
 .bold{
-	font-weight: normal;
-	font-family: "SegoeUIBold";
 }
 em, i, 
 .italic{
-	font-style: normal;
-	font-family: "SegoeUIItalic";
 }
 
 strong em,
 em strong
 {
-	font-weight: normal;
-	font-family: "SegoeUIBoldItalic";
 }
 
 
@@ -163,6 +162,39 @@ em strong
 
 }
 
+
+.btn{
+	border: 1px solid;
+	font-size: 1.4rem;
+	margin: 0 1.3rem;
+	padding: 1rem 2.3rem;
+	margin-left: 1.3rem;
+	margin-top: 4rem;
+	position: relative;
+	display: inline-block;
+	&-green{
+		color: $color4;		
+		&:before{
+			border-top-color: $color4
+		}
+	}
+	&:before{
+		@extend .before;
+		border-top: 1px solid $color4;
+		left: -1.3rem;
+		top: -18px;
+		width: calc(100% + 26px);
+	}
+	&:hover{
+		color: $color2;
+		text-decoration: none;
+		&.btn{
+			&-green{
+				background-color: $color4
+			}
+		}
+	}
+}
 
 
 /* =header
