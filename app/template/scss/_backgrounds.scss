@@ -26,7 +26,7 @@
 }
 
 .bg-right{
-	background-position: right;
+	background-position: right top;
 }
 
 .homepage
@@ -35,7 +35,7 @@
 	background-position: left 80px;
 	.about{
 		background-image: url(../images/bg/bg-3.jpg);
-		background-position: right top;
+		// background-position: right top;
 	}
 }
 

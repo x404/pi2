@@ -37,3 +37,38 @@
 		margin: 3rem 0;
 	}
 }
+
+
+.homepage{
+	.history{
+		min-height: 615px;
+		margin-top: -24rem;
+	}
+
+
+	.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date{
+		right: auto;
+		text-align: left;
+		left: 15%;
+	}
+
+	.cd-timeline-block:nth-child(even) .cd-timeline-content{
+		float: left;
+	}
+
+	.timeline:before{
+		left: 0
+	}
+	.cd-timeline-img{
+		left: 0;
+	}
+	.cd-timeline-content .cd-date{
+		left: 35px !important;
+	}
+	.cd-timeline-content{
+		width: 90%;
+		.cd-date {
+			top: 0;
+		}
+	}
+}
