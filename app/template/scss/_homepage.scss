@@ -39,6 +39,64 @@
 }
 
 
+.activity{
+	margin-top: 6.5rem;
+	h1{
+		margin-bottom: 4rem;
+	}
+	&__menu{
+		margin: 4rem 3.3rem;
+	}	
+
+	&__link{
+		border: 1px solid $color4;
+		display: block;
+		margin: 0 auto;
+		max-width: 27rem;
+		padding: 2rem 1rem;
+		text-align: center;
+		&:hover{
+			background-color: $color4;
+			color: $color2;
+			text-decoration: none;
+			.activity{
+				&__pic{
+					filter: grayscale(1) brightness(5);
+				}
+			}
+		}
+	}
+	&__pic{
+		align-items: center;
+		display: flex;
+		height: 14rem;
+		justify-content: center;
+	}
+	&__text{}
+}
+
+#activity-carousel{
+	.slick{
+		&-arrow{
+			filter: invert(.5) opacity(.6);
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: .3s;
+			&:hover{
+				filter: none;
+			}
+		}
+		&-prev{
+			transform: translateY(-50%) rotate(180deg);
+			left: -25px;
+		}
+		&-next{
+			right: -25px;
+		}
+	}
+}
+
 .homepage{
 	.history{
 		min-height: 615px;

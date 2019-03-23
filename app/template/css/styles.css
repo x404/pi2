@@ -3477,6 +3477,9 @@ h3 {
 .ucase {
   text-transform: uppercase; }
 
+.flex {
+  display: flex; }
+
 .tdn {
   text-decoration: none; }
   .tdn:hover {
@@ -3696,6 +3699,47 @@ h3 {
   min-height: 850px; }
   .about p {
     margin: 3rem 0; }
+
+.activity {
+  margin-top: 6.5rem; }
+  .activity h1 {
+    margin-bottom: 4rem; }
+  .activity__menu {
+    margin: 4rem 3.3rem; }
+  .activity__link {
+    border: 1px solid #30797a;
+    display: block;
+    margin: 0 auto;
+    max-width: 27rem;
+    padding: 2rem 1rem;
+    text-align: center; }
+    .activity__link:hover {
+      background-color: #30797a;
+      color: #fff;
+      text-decoration: none; }
+      .activity__link:hover .activity__pic {
+        filter: grayscale(1) brightness(5); }
+  .activity__pic {
+    align-items: center;
+    display: flex;
+    height: 14rem;
+    justify-content: center; }
+
+#activity-carousel .slick-arrow {
+  filter: invert(0.5) opacity(0.6);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .3s; }
+  #activity-carousel .slick-arrow:hover {
+    filter: none; }
+
+#activity-carousel .slick-prev {
+  transform: translateY(-50%) rotate(180deg);
+  left: -25px; }
+
+#activity-carousel .slick-next {
+  right: -25px; }
 
 .homepage .history {
   min-height: 615px;
@@ -3957,6 +4001,13 @@ h3 {
     display: block;
     height: auto;
     border: 1px solid transparent; }
+
+.slick-arrow {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0; }
 
 .slick-arrow.slick-hidden {
   display: none; }

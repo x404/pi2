@@ -93,6 +93,16 @@
         border: 1px solid transparent;
     }
 }
+
+
+.slick-arrow{
+	cursor: pointer;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+
+}
 .slick-arrow.slick-hidden {
     display: none;
 }
