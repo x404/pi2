@@ -3309,11 +3309,15 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .history {
   background-image: url(../images/bg/bg-4.webp); }
 
+.webp .linkbox {
+  background-image: url(../images/bg/bg-5.webp); }
+
 .homepage,
 .inner,
 .modal-menu,
 .about,
-.history {
+.history,
+.linkbox {
   background-repeat: no-repeat; }
 
 .bg-right {
@@ -3327,6 +3331,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .history {
   background-image: url(../images/bg/bg-4.jpg); }
+
+.linkbox {
+  background-image: url(../images/bg/bg-5.jpg); }
 
 .container {
   margin-right: auto;
@@ -3693,6 +3700,30 @@ h3 {
     top: -6px;
     width: 16px; }
 
+.homepage .history {
+  min-height: 615px;
+  margin-top: -24rem; }
+
+.homepage .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+  left: 15%;
+  right: auto;
+  text-align: left; }
+
+.homepage .cd-timeline-block:nth-child(even) .cd-timeline-content {
+  float: left; }
+
+.homepage .timeline:before,
+.homepage .cd-timeline-img {
+  left: 0; }
+
+.homepage .cd-timeline-content .cd-date {
+  left: 35px !important; }
+
+.homepage .cd-timeline-content {
+  width: 90%; }
+  .homepage .cd-timeline-content .cd-date {
+    top: 0; }
+
 .about {
   font-size: 1.6rem;
   margin-top: 7.5rem;
@@ -3735,37 +3766,36 @@ h3 {
     filter: none; }
 
 #activity-carousel .slick-prev {
-  transform: translateY(-50%) rotate(180deg);
-  left: -25px; }
+  left: -25px;
+  transform: translateY(-50%) rotate(180deg); }
 
 #activity-carousel .slick-next {
   right: -25px; }
 
-.homepage .history {
-  min-height: 615px;
-  margin-top: -24rem; }
-
-.homepage .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
-  right: auto;
-  text-align: left;
-  left: 15%; }
-
-.homepage .cd-timeline-block:nth-child(even) .cd-timeline-content {
-  float: left; }
-
-.homepage .timeline:before {
-  left: 0; }
-
-.homepage .cd-timeline-img {
-  left: 0; }
-
-.homepage .cd-timeline-content .cd-date {
-  left: 35px !important; }
-
-.homepage .cd-timeline-content {
-  width: 90%; }
-  .homepage .cd-timeline-content .cd-date {
-    top: 0; }
+.linkbox {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: -3.5rem;
+  min-height: 725px;
+  padding-top: 11rem;
+  text-transform: uppercase; }
+  .linkbox li {
+    background: url(../images/quote-left.png) no-repeat left center;
+    margin-left: 4.2rem;
+    margin-top: 4.5rem;
+    padding-left: 55px; }
+    .linkbox li:nth-child(2) {
+      margin-left: 11rem; }
+    .linkbox li:nth-child(3) {
+      margin-left: 19rem; }
+    .linkbox li:nth-child(4) {
+      margin-left: 26rem; }
+  .linkbox a {
+    border-bottom: 1px solid #30797a;
+    color: #666; }
+    .linkbox a:hover {
+      border-bottom: rgba(0, 0, 0, 0);
+      text-decoration: none; }
 
 /* =mobile-menu
 ---------------------------*/

@@ -9,6 +9,10 @@
 	.history{
 		background-image: url(../images/bg/bg-4.webp);
 	}
+
+	.linkbox{
+		background-image: url(../images/bg/bg-5.webp);
+	}
 }
 
 
@@ -19,7 +23,8 @@
 .inner,
 .modal-menu,
 .about,
-.history
+.history,
+.linkbox
 {
 	background-repeat: no-repeat;
 	// background-size: cover;
@@ -41,4 +46,9 @@
 
 .history{
 	background-image: url(../images/bg/bg-4.jpg);
+}
+
+
+.linkbox{
+	background-image: url(../images/bg/bg-5.jpg);
 }
