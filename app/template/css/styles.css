@@ -3312,12 +3312,16 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .linkbox {
   background-image: url(../images/bg/bg-5.webp); }
 
+.webp .lastnews {
+  background-image: url(../images/bg/bg-6.webp); }
+
 .homepage,
 .inner,
 .modal-menu,
 .about,
 .history,
-.linkbox {
+.linkbox,
+.lastnews {
   background-repeat: no-repeat; }
 
 .bg-right {
@@ -3334,6 +3338,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .linkbox {
   background-image: url(../images/bg/bg-5.jpg); }
+
+.lastnews {
+  background-image: url(../images/bg/bg-6.jpg);
+  min-height: 895px; }
 
 .container {
   margin-right: auto;
@@ -3742,6 +3750,9 @@ h3 {
     margin-left: 56%;
     margin-top: 1.2rem; }
 
+.homepage .news__list {
+  margin-top: 1.5rem; }
+
 .project__desc {
   bottom: 0;
   left: 0;
@@ -3796,6 +3807,11 @@ h3 {
   margin-bottom: 3rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
+
+.lastnews {
+  margin-top: -10rem;
+  margin-bottom: 3.5rem;
+  padding-top: 20.8rem; }
 
 .about {
   font-size: 1.6rem;
@@ -3869,6 +3885,33 @@ h3 {
     .linkbox a:hover {
       border-bottom: rgba(0, 0, 0, 0);
       text-decoration: none; }
+
+.news__item {
+  margin: 4rem 0; }
+
+.item-news__desc {
+  margin-left: 2.4rem; }
+
+.item-news__title {
+  color: #404040;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-top: .8rem;
+  text-transform: uppercase; }
+
+.item-news__text {
+  color: #4a4a4a;
+  line-height: 1.7;
+  margin: 4rem 0 1.2rem; }
+
+.item-news__link {
+  color: #808080;
+  text-decoration: underline;
+  text-decoration-color: #30797a; }
+  .item-news__link:hover {
+    color: #808080;
+    text-decoration: none; }
 
 /* =mobile-menu
 ---------------------------*/

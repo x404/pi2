@@ -85,18 +85,14 @@
 			margin-top: 1.2rem;
 		}
 	}
-}
 
 
-.projects{
-	&__list{
-
-	}
-
-	&__item{
-
+	// news__list
+	.news__list{
+		margin-top: 1.5rem;
 	}
 }
+
 
 .project{
 	&__desc{
@@ -160,6 +156,13 @@
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
+}
+
+
+.lastnews{
+	margin-top: -10rem;
+	margin-bottom: 3.5rem;
+	padding-top: 20.8rem;
 }
 
 
@@ -262,4 +265,44 @@
 			text-decoration: none;
 		}
 	}
+}
+
+
+// news__list
+.news{
+	&__list{
+	}
+	&__item{
+		margin: 4rem 0;
+	}
+}
+
+.item-news{
+	&__desc{
+		margin-left: 2.4rem;
+	}
+	&__title{
+		color: $color5;
+		font-size: 1.8rem;
+		font-weight: normal;
+		line-height: 1.2;
+		margin-top: .8rem;
+		text-transform: uppercase;
+	}
+	&__text{
+		color: $color6;
+		line-height: 1.7;
+		margin: 4rem 0 1.2rem;
+	}
+
+	&__link{
+		color: $color7;
+		text-decoration: underline;
+		text-decoration-color: $color4;			
+		&:hover{
+			color: $color7;
+			text-decoration: none;
+		}
+	}
+
 }

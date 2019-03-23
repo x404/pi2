@@ -13,6 +13,11 @@
 	.linkbox{
 		background-image: url(../images/bg/bg-5.webp);
 	}
+
+	.lastnews{
+		background-image: url(../images/bg/bg-6.webp);
+	}
+
 }
 
 
@@ -24,7 +29,8 @@
 .modal-menu,
 .about,
 .history,
-.linkbox
+.linkbox,
+.lastnews
 {
 	background-repeat: no-repeat;
 	// background-size: cover;
@@ -51,4 +57,10 @@
 
 .linkbox{
 	background-image: url(../images/bg/bg-5.jpg);
+}
+
+
+.lastnews{
+	background-image: url(../images/bg/bg-6.jpg);
+	min-height: 895px;
 }
