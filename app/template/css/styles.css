@@ -3692,12 +3692,29 @@ h3 {
 .slogan {
   color: #30797a;
   font-size: 3.6rem;
-  line-height: 1.2;
+  line-height: 1;
   padding-left: 42%;
-  padding-top: 24rem; }
+  padding-top: 31rem; }
   .slogan .num {
+    line-height: .8;
     font-weight: bold;
     font-size: 15rem; }
+
+.catline .cats {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 26%; }
+  .catline .cats li {
+    border-left: 1px solid #30797a;
+    height: 4.2rem;
+    padding-left: .8rem;
+    padding-top: 1.5rem;
+    width: 33%; }
+  .catline .cats a:hover {
+    color: #30797a;
+    text-decoration: none; }
 
 .grad-line {
   background: linear-gradient(to right, #8bb2ba 0%, #30797a 100%);
@@ -3821,7 +3838,7 @@ h3 {
 
 .about {
   font-size: 1.6rem;
-  margin-top: 7.5rem;
+  margin-top: 6.3rem;
   min-height: 850px; }
   .about p {
     margin: 3rem 0; }
