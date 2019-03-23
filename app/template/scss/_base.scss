@@ -285,6 +285,11 @@ em strong
 ---------------------------*/
 
 
+.contacts{
+	header{
+		margin-bottom: 4rem;
+	}
+}
 
 /* =footer
 ---------------------------*/
@@ -323,7 +328,7 @@ em strong
 			}
 		}
 	}
-	.projects{
+	.lastprojects{
 		&__item{
 			margin-right: 1.8rem;
 			margin-bottom: 1.8rem;

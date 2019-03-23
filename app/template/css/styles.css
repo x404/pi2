@@ -3507,7 +3507,7 @@ h3 {
   .footer .creators a:hover, .cd-timeline-content .more a:hover {
     text-decoration: none; }
 
-.before, .btn:before, .footer .projects__item a:before, .footer .projects__item a:after, .grad-line:after, .project__num:before {
+.before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after, .grad-line:after, .project__num:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3589,6 +3589,9 @@ h3 {
 
 /* =/plate
 ---------------------------*/
+.contacts header {
+  margin-bottom: 4rem; }
+
 /* =footer
 ---------------------------*/
 .footer {
@@ -3613,31 +3616,31 @@ h3 {
   .footer__menu a:hover {
     color: #666;
     text-decoration-color: #30797a; }
-  .footer .projects__item {
+  .footer .lastprojects__item {
     margin-right: 1.8rem;
     margin-bottom: 1.8rem;
     position: relative; }
-    .footer .projects__item a {
+    .footer .lastprojects__item a {
       display: block; }
-      .footer .projects__item a:before, .footer .projects__item a:after {
+      .footer .lastprojects__item a:before, .footer .lastprojects__item a:after {
         opacity: 0;
         transition: opacity .3s; }
-      .footer .projects__item a:before {
+      .footer .lastprojects__item a:before {
         left: 0;
         top: 0;
         bottom: 0;
         right: 0;
         background-color: rgba(48, 121, 122, 0.5); }
-      .footer .projects__item a:after {
+      .footer .lastprojects__item a:after {
         background: url(../images/arrow-more.png) no-repeat center;
         height: 40px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         width: 40px; }
-      .footer .projects__item a:hover {
+      .footer .lastprojects__item a:hover {
         opacity: 1; }
-        .footer .projects__item a:hover:before, .footer .projects__item a:hover:after {
+        .footer .lastprojects__item a:hover:before, .footer .lastprojects__item a:hover:after {
           opacity: 1; }
   .footer .social a {
     border-radius: 50%;
@@ -3711,6 +3714,9 @@ h3 {
 .homepage .history {
   min-height: 615px;
   margin-top: -24rem; }
+
+.homepage .timeline {
+  margin-bottom: 2rem; }
 
 .homepage .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
   left: 15%;
