@@ -3,6 +3,13 @@
 	margin-left: auto;
 }
 
+
+[class*="grid-"]{
+	grid-row-gap: 30px;
+	grid-column-gap: 30px;
+}
+
+
 @media (max-width: 767px) {
 	.container{
 		padding-left: 15px;
@@ -20,6 +27,17 @@
 	.container {
 		width: 940px;
 	}
+
+
+	// @for $i from 1 through 12{
+	//   	.grid-lg-#{$i}{
+	// 		grid-template-columns: repeat(#{$i}, 1fr);  		
+	// 		grid-row-gap: 30px;
+	//   	}
+	// }	
+	// .d-lg-grid{
+	// 	display: grid !important;
+	// }
 }
 
 @media (min-width: 1150px) {
@@ -35,9 +53,31 @@
 	}
 }
 
+@media (min-width: 1250px){
+	.grid-xl-6{
+		grid-template-columns: repeat(6, 1fr)
+	}		
+}
 
 @media (min-width: 1400px) {
 	.container {
 		width: 1260px;
 	}
+}
+
+
+
+
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+	@for $i from 1 through 12{
+	  	.grid#{$infix}-#{$i}{
+			grid-template-columns: repeat(#{$i}, 1fr);  		
+			
+	  	}
+	}
+  }
 }
