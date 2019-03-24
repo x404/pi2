@@ -3669,7 +3669,7 @@ h3 {
 
 .before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
 .history .slick-slide a:before,
-.history .slick-slide a:after, .grad-line:after, .project__num:before, .licensies a:before, .licensies a:after {
+.history .slick-slide a:after, .grad-line:after, .project__num:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, .licensies a:before, .licensies a:after {
   content: "";
   display: block;
   position: absolute; }
@@ -4546,9 +4546,69 @@ tbody.collapse.show {
   transition: height .35s ease; }
 
 main {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  padding-bottom: 3rem; }
   main p {
     margin: 3rem 0; }
+  main a:hover {
+    color: #30797a; }
+  main table {
+    margin-top: 1.5rem;
+    font-size: 1.4rem; }
+    main table th {
+      font-weight: bold; }
+    main table th,
+    main table td {
+      color: #404040;
+      border: 1px solid #ccc;
+      padding: 1rem 2.5rem; }
+    main table a {
+      color: #30797a; }
+  main .table {
+    margin-top: 1.5rem; }
+    main .table th {
+      font-weight: bold; }
+    main .table th,
+    main .table td {
+      border: 1px solid #ccc;
+      color: #404040;
+      padding: .7rem 2.5rem; }
+    main .table a {
+      color: #30797a; }
+
+.inner-to-actioners main p {
+  margin: 2rem 0; }
+
+.inner-to-actioners main p a {
+  color: #000; }
+  .inner-to-actioners main p a:hover {
+    color: #30797a; }
+  .inner-to-actioners main p a[href$=".pdf"], .inner-to-actioners main p a[href$=".rar"] {
+    min-height: 40px;
+    display: inline-block;
+    padding-top: 7px;
+    position: relative;
+    padding-left: 53px; }
+    .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before {
+      align-items: center;
+      background-color: #a6a6a6;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      height: 40px;
+      justify-content: center;
+      left: 0;
+      transition: background-color .3s;
+      text-align: center;
+      text-transform: uppercase;
+      width: 40px;
+      top: 0; }
+    .inner-to-actioners main p a[href$=".pdf"]:hover:before, .inner-to-actioners main p a[href$=".rar"]:hover:before {
+      background-color: #30797a; }
+  .inner-to-actioners main p a[href$=".pdf"]:before {
+    content: "PDF"; }
+  .inner-to-actioners main p a[href$=".rar"]:before {
+    content: "RAR"; }
 
 .licensies {
   margin-bottom: 5rem; }
