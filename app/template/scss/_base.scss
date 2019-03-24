@@ -293,6 +293,44 @@ em strong
 
 /* =footer
 ---------------------------*/
+.footer	.lastprojects__item,
+.history .slick-slide
+{
+	position: relative;
+	a{
+			display: block;
+			&:before,
+			&:after{
+				@extend .before;
+				opacity: 0;
+				transition: opacity .3s;		
+			}
+			&:before{
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				background-color: rgba(48, 121, 122, .5);
+			}
+			&:after{
+				background: url(../images/arrow-more.png) no-repeat center;
+				height: 40px;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 40px;
+			}
+			&:hover{
+				opacity: 1;
+				&:before,
+				&:after{
+					opacity: 1;
+				}
+			}
+	}
+}
+
+
 .footer{
 	background-color: #fff;
 	font-size: 1.5rem;
@@ -333,38 +371,7 @@ em strong
 		&__item{
 			margin-right: 1.8rem;
 			margin-bottom: 1.8rem;
-			position: relative;
-			a{
-				display: block;
-				&:before,
-				&:after{
-					@extend .before;
-					opacity: 0;
-					transition: opacity .3s;		
-				}
-				&:before{
-					left: 0;
-					top: 0;
-					bottom: 0;
-					right: 0;
-					background-color: rgba(48, 121, 122, .5);
-				}
-				&:after{
-					background: url(../images/arrow-more.png) no-repeat center;
-					height: 40px;
-					left: 50%;
-					top: 50%;
-					transform: translate(-50%, -50%);
-					width: 40px;
-				}
-				&:hover{
-					opacity: 1;
-					&:before,
-					&:after{
-						opacity: 1;
-					}
-				}
-			}
+
 		}
 	}
 

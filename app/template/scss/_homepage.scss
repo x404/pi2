@@ -58,10 +58,17 @@
 	.history{
 		min-height: 615px;
 		margin-top: -24rem;
+		.cd-timeline-block{
+			margin-bottom: 11rem;
+		}
+		.cd-timeline-content{
+			width: 85%;
+		}
 	}
 
 
 	.timeline{
+		padding-bottom: 1px;
 		margin-bottom: 2rem;
 	}
 
@@ -242,21 +249,21 @@
 #activity-carousel{
 	.slick{
 		&-arrow{
-			filter: invert(.5) opacity(.6);
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			transition: .3s;
+			// filter: invert(.5) opacity(.6);
+			// position: absolute;
+			// top: 50%;
+			// transform: translateY(-50%);
+			// transition: .3s;
 			&:hover{
-				filter: none;
+				// filter: none;
 			}
 		}
 		&-prev{
-			left: -25px;
+			// left: -25px;
 			transform: translateY(-50%) rotate(180deg);
 		}
 		&-next{
-			right: -25px;
+			// right: -25px;
 		}
 	}
 }

@@ -1,0 +1,55 @@
+.history{
+	margin-top: 3rem;
+	padding-bottom: 0;
+
+	.cd-timeline-content{
+		width: 47%;
+		background: none;
+	}
+	.cd-timeline-box{
+		background: $color2;
+		border: 1px solid $color4;
+		color: #4a4a4a;
+		font-size: 1.4rem;
+		padding: 1.7rem 2.5rem;
+		position: relative;
+		top: -15px;
+		p{
+			margin: 0;
+		}
+		.cd-title{
+			color: #404040;
+			font-size: 1.8rem;
+			line-height: 1.5;
+			margin-bottom: 1rem;
+			text-transform: uppercase;
+		}
+	}
+
+
+	.cd-timeline-block{
+		margin-bottom: 6rem;
+	}
+
+	.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date{
+		right: 114%;
+	}
+
+	.cd-date{
+		left: 112%;
+		top: 0;
+	}
+
+	.slick-slider{
+		display: block !important;
+		margin: 2.5rem auto 1rem;
+		width: 453px;
+		.slick-slide img{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.slick-slider div{
+		display: block;
+	}
+}

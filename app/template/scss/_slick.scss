@@ -96,13 +96,30 @@
 
 
 .slick-arrow{
-	cursor: pointer;
 	background: none;
 	border: none;
-	padding: 0;
+	cursor: pointer;
+	filter: invert(.5) opacity(.6);
 	margin: 0;
+	padding: 0;
+	transition: .3s;
+
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	&:hover{
+		filter: none;
+	}
 
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slick-next{
+	right: -25px;
+}
+.slick-prev{
+	left: -25px;
+	transform: translateY(-50%) rotate(180deg);
 }

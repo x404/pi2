@@ -4,11 +4,11 @@
 		.about{
 			background-image: url(../images/bg/bg-3.webp);			
 		}
+		.history{
+			background-image: url(../images/bg/bg-4.webp);
+		}
 	}
 
-	.history{
-		background-image: url(../images/bg/bg-4.webp);
-	}
 
 	.linkbox{
 		background-image: url(../images/bg/bg-5.webp);
@@ -20,8 +20,10 @@
 
 	.inner{
 		background-image: url(../images/bg/inner-bg.webp);
+		&-history .main{
+			background-image: url(../images/bg/inner-bg-3.webp);
+		}
 	}
-
 }
 
 
@@ -35,7 +37,8 @@
 .history,
 .linkbox,
 .lastnews,
-.inner
+.inner,
+.inner-history .main
 {
 	background-repeat: no-repeat;
 	// background-size: cover;
@@ -53,11 +56,11 @@
 		background-image: url(../images/bg/bg-3.jpg);
 		// background-position: right top;
 	}
+	.history{
+		background-image: url(../images/bg/bg-4.jpg);
+	}
 }
 
-.history{
-	background-image: url(../images/bg/bg-4.jpg);
-}
 
 
 .linkbox{
@@ -74,4 +77,8 @@
 .inner{
 	background-image: url(../images/bg/inner-bg.jpg);
 	background-position: left 80px;
+	&-history .main{
+		background-image: url(../images/bg/inner-bg-3.jpg);
+		background-position: right bottom 160px;
+	}
 }
