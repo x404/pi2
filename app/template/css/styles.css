@@ -3359,6 +3359,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: auto;
   margin-left: auto; }
 
+[class*="grid-"] {
+  grid-row-gap: 30px;
+  grid-column-gap: 30px; }
+
 @media (max-width: 767px) {
   .container {
     padding-left: 15px;
@@ -3376,9 +3380,153 @@ a.text-dark:hover, a.text-dark:focus {
   .container {
     width: 1100px; } }
 
+@media (min-width: 1250px) {
+  .grid-xl-6 {
+    grid-template-columns: repeat(6, 1fr); } }
+
 @media (min-width: 1400px) {
   .container {
     width: 1260px; } }
+
+.grid-1 {
+  grid-template-columns: repeat(1, 1fr); }
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr); }
+
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr); }
+
+.grid-6 {
+  grid-template-columns: repeat(6, 1fr); }
+
+.grid-7 {
+  grid-template-columns: repeat(7, 1fr); }
+
+.grid-8 {
+  grid-template-columns: repeat(8, 1fr); }
+
+.grid-9 {
+  grid-template-columns: repeat(9, 1fr); }
+
+.grid-10 {
+  grid-template-columns: repeat(10, 1fr); }
+
+.grid-11 {
+  grid-template-columns: repeat(11, 1fr); }
+
+.grid-12 {
+  grid-template-columns: repeat(12, 1fr); }
+
+@media (min-width: 576px) {
+  .grid-sm-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-sm-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-sm-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-sm-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  .grid-sm-5 {
+    grid-template-columns: repeat(5, 1fr); }
+  .grid-sm-6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid-sm-7 {
+    grid-template-columns: repeat(7, 1fr); }
+  .grid-sm-8 {
+    grid-template-columns: repeat(8, 1fr); }
+  .grid-sm-9 {
+    grid-template-columns: repeat(9, 1fr); }
+  .grid-sm-10 {
+    grid-template-columns: repeat(10, 1fr); }
+  .grid-sm-11 {
+    grid-template-columns: repeat(11, 1fr); }
+  .grid-sm-12 {
+    grid-template-columns: repeat(12, 1fr); } }
+
+@media (min-width: 768px) {
+  .grid-md-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-md-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-md-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-md-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  .grid-md-5 {
+    grid-template-columns: repeat(5, 1fr); }
+  .grid-md-6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid-md-7 {
+    grid-template-columns: repeat(7, 1fr); }
+  .grid-md-8 {
+    grid-template-columns: repeat(8, 1fr); }
+  .grid-md-9 {
+    grid-template-columns: repeat(9, 1fr); }
+  .grid-md-10 {
+    grid-template-columns: repeat(10, 1fr); }
+  .grid-md-11 {
+    grid-template-columns: repeat(11, 1fr); }
+  .grid-md-12 {
+    grid-template-columns: repeat(12, 1fr); } }
+
+@media (min-width: 992px) {
+  .grid-lg-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-lg-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-lg-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-lg-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  .grid-lg-5 {
+    grid-template-columns: repeat(5, 1fr); }
+  .grid-lg-6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid-lg-7 {
+    grid-template-columns: repeat(7, 1fr); }
+  .grid-lg-8 {
+    grid-template-columns: repeat(8, 1fr); }
+  .grid-lg-9 {
+    grid-template-columns: repeat(9, 1fr); }
+  .grid-lg-10 {
+    grid-template-columns: repeat(10, 1fr); }
+  .grid-lg-11 {
+    grid-template-columns: repeat(11, 1fr); }
+  .grid-lg-12 {
+    grid-template-columns: repeat(12, 1fr); } }
+
+@media (min-width: 1250px) {
+  .grid-xl-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-xl-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-xl-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-xl-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  .grid-xl-5 {
+    grid-template-columns: repeat(5, 1fr); }
+  .grid-xl-6 {
+    grid-template-columns: repeat(6, 1fr); }
+  .grid-xl-7 {
+    grid-template-columns: repeat(7, 1fr); }
+  .grid-xl-8 {
+    grid-template-columns: repeat(8, 1fr); }
+  .grid-xl-9 {
+    grid-template-columns: repeat(9, 1fr); }
+  .grid-xl-10 {
+    grid-template-columns: repeat(10, 1fr); }
+  .grid-xl-11 {
+    grid-template-columns: repeat(11, 1fr); }
+  .grid-xl-12 {
+    grid-template-columns: repeat(12, 1fr); } }
 
 /*---------------------------------------------------
     SCSS Elements 0.1
@@ -3521,7 +3669,7 @@ h3 {
 
 .before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
 .history .slick-slide a:before,
-.history .slick-slide a:after, .grad-line:after, .project__num:before {
+.history .slick-slide a:after, .grad-line:after, .project__num:before, .licensies a:before, .licensies a:after {
   content: "";
   display: block;
   position: absolute; }
@@ -4401,6 +4549,35 @@ main {
   font-size: 1.6rem; }
   main p {
     margin: 3rem 0; }
+
+.licensies {
+  margin-bottom: 5rem; }
+  .licensies a {
+    position: relative;
+    display: block;
+    max-width: 270px; }
+    .licensies a:before, .licensies a:after {
+      opacity: 0;
+      transition: opacity .3s; }
+    .licensies a:before {
+      background: rgba(0, 0, 0, 0.3);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0; }
+    .licensies a:after {
+      background: url(../images/zoom.png) no-repeat center;
+      height: 56px;
+      left: 50%;
+      top: 50%;
+      width: 54px;
+      transform: translate(-50%, -50%); }
+    .licensies a:hover:before, .licensies a:hover:after {
+      opacity: 1; }
+    .licensies a img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
 
 .history {
   margin-top: 3rem;
