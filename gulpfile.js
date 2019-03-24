@@ -56,6 +56,7 @@ gulp.task('compress', function(){
 	pump([
 			gulp.src([  // Берем все необходимые библиотеки
 				config.templateDir + '/js/modernizr-custom-webp.js',
+				config.templateDir + '/js/modernizr.js',
 				config.libsDir + '/jquery/dist/jquery.js',
 				config.libsDir + '/jquery-validation/dist/jquery.validate.js',
 				config.templateDir + '/js/util.js',

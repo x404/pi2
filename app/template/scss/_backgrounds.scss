@@ -18,6 +18,10 @@
 		background-image: url(../images/bg/bg-6.webp);
 	}
 
+	.inner{
+		background-image: url(../images/bg/inner-bg.webp);
+	}
+
 }
 
 
@@ -30,7 +34,8 @@
 .about,
 .history,
 .linkbox,
-.lastnews
+.lastnews,
+.inner
 {
 	background-repeat: no-repeat;
 	// background-size: cover;
@@ -63,4 +68,10 @@
 .lastnews{
 	background-image: url(../images/bg/bg-6.jpg);
 	min-height: 895px;
+}
+
+
+.inner{
+	background-image: url(../images/bg/inner-bg.jpg);
+	background-position: left 80px;
 }

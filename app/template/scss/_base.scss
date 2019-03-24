@@ -211,7 +211,7 @@ em strong
 
 .logo{
 	color: $color3;
-	// font-weight: bold;
+	font-weight: bold;
 	font-size: 3rem;
 }
 
@@ -294,8 +294,9 @@ em strong
 /* =footer
 ---------------------------*/
 .footer{
-	padding: 2.5rem 0 1rem;
+	background-color: #fff;
 	font-size: 1.5rem;
+	padding: 2.5rem 0 1rem;
 	.title{
 		font-size: 1.8rem;
 		font-weight: normal;
