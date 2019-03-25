@@ -4656,6 +4656,24 @@ main {
       max-width: 100%;
       height: auto; }
 
+#single-carousel {
+  margin: 4rem 0 3.5rem; }
+  #single-carousel .slick-arrow {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    width: 87px;
+    z-index: 99;
+    filter: none;
+    text-align: left;
+    padding-left: 27px; }
+    #single-carousel .slick-arrow:hover {
+      background-color: #000;
+      padding-left: 35px; }
+  #single-carousel .slick-prev {
+    left: -33px; }
+  #single-carousel .slick-next {
+    right: -33px; }
+
 .history {
   margin-top: 3rem;
   padding-bottom: 0; }

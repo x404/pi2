@@ -161,6 +161,15 @@ $(document).ready(function(){
 		]
 	});
 
+
+
+	$('#single-carousel').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><img src="/template/images/arrow-white.png" alt="" /></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><img src="/template/images/arrow-white.png" alt="" /></button>',
+	});
+
 	var $timeline_block = $('.cd-timeline-block');
 
 	//hide timeline blocks which are outside the viewport
