@@ -4674,6 +4674,32 @@ main {
   #single-carousel .slick-next {
     right: -33px; }
 
+#single-carousel ~ .project__about {
+  margin-top: -3.5rem; }
+
+.project__about {
+  background-color: #d9d9d9;
+  color: #404040;
+  padding: 1.5rem;
+  line-height: 1.8; }
+
+.project__area {
+  flex-shrink: 0;
+  padding-left: 2rem; }
+
+.client {
+  color: #d9d9d9;
+  font-size: 1.8rem;
+  margin-top: 3rem; }
+  .client__body {
+    background-color: #30797a;
+    display: inline-block;
+    padding: .5rem 1.2rem; }
+  .client p {
+    margin: 0; }
+  .client strong {
+    color: #fff; }
+
 .history {
   margin-top: 3rem;
   padding-bottom: 0; }

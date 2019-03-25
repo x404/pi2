@@ -197,3 +197,42 @@ main{
 		}
 	}
 }
+
+
+#single-carousel ~ .project__about{
+	margin-top: -3.5rem;
+}
+
+.project{
+	&__about{
+		background-color: $color8;
+		color: $color5;
+		padding: 1.5rem;
+		line-height: 1.8;
+	}
+	&__text{
+	}
+
+	&__area{
+		flex-shrink: 0;
+		padding-left: 2rem;
+	}
+}
+
+
+.client{
+	color: #d9d9d9;
+	font-size: 1.8rem;
+	margin-top: 3rem;
+	&__body{
+		background-color: $color4;
+		display: inline-block;
+		padding: .5rem 1.2rem;
+	}
+	p{
+		margin: 0;
+	}
+	strong{
+		color: $color2;		
+	}
+}
