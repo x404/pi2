@@ -210,22 +210,30 @@
 }
 
 
+.homepage{
+	.activity{
+		&__menu{
+			margin: 4rem 3.3rem;
+		}	
+	}
+}
+
+
 .activity{
 	margin-top: 6.5rem;
 	h1{
 		margin-bottom: 4rem;
 	}
-	&__menu{
-		margin: 4rem 3.3rem;
-	}	
 
 	&__link{
 		border: 1px solid $color4;
+		color: $color6;
 		display: block;
 		margin: 0 auto;
 		max-width: 27rem;
 		padding: 2rem 1rem;
 		text-align: center;
+		text-decoration: none;
 		&:hover{
 			background-color: $color4;
 			color: $color2;
@@ -243,8 +251,14 @@
 		height: 14rem;
 		justify-content: center;
 	}
-	&__text{}
+	&__text{
+		p{
+			margin: 0;
+		}
+	}
 }
+
+
 
 #activity-carousel{
 	.slick{

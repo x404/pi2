@@ -4023,19 +4023,22 @@ h3 {
   .about p {
     margin: 3rem 0; }
 
+.homepage .activity__menu {
+  margin: 4rem 3.3rem; }
+
 .activity {
   margin-top: 6.5rem; }
   .activity h1 {
     margin-bottom: 4rem; }
-  .activity__menu {
-    margin: 4rem 3.3rem; }
   .activity__link {
     border: 1px solid #30797a;
+    color: #4a4a4a;
     display: block;
     margin: 0 auto;
     max-width: 27rem;
     padding: 2rem 1rem;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none; }
     .activity__link:hover {
       background-color: #30797a;
       color: #fff;
@@ -4047,6 +4050,8 @@ h3 {
     display: flex;
     height: 14rem;
     justify-content: center; }
+  .activity__text p {
+    margin: 0; }
 
 #activity-carousel .slick-prev {
   transform: translateY(-50%) rotate(180deg); }
