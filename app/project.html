@@ -138,6 +138,10 @@
 		<!-- InstanceEndEditable -->
 		</div>
 		<!-- InstanceBeginEditable name="EditRegion5" -->
+		<div class="object-place container">
+			<h3>РАСПОЛОЖЕНИЕ ОБЪЕКТА</h3>
+		</div>
+		<div id="map"></div>
 		<!-- InstanceEndEditable -->
 	</div>
 
@@ -231,6 +235,43 @@
 <script type="text/javascript" src="/template/js/slick.min.js"></script>
 <script src="/template/js/engine.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
+
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+var map;
+var myCollection;
+ymaps.ready(function () {
+	map = new ymaps.Map('map', {
+		center: [55.65471903, 37.54170197],
+		zoom: 17
+	});
+	myCollection = new ymaps.GeoObjectCollection(null, {
+		preset: 'islands#redDotIcon'
+	});
+	myCollection.add(new ymaps.Placemark(
+		[55.65471903, 37.54170197],
+		{
+			hintContent: '',
+			balloonContent: ''
+		}
+	));
+
+	map.behaviors.disable('scrollZoom'); 
+	map.geoObjects.add(myCollection);
+
+	map.events.add('click', function onMapClick(e) {
+		if(map.behaviors.isEnabled('scrollZoom')) {
+			map.events.remove('click', onMapClick);
+		} else {
+			map.behaviors.enable(['scrollZoom']);
+		}
+	});
+});
+function go_to(lat,lon){
+	map.setCenter([lat, lon], 17);
+}
+</script>
+
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

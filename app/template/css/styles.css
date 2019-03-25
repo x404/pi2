@@ -3669,7 +3669,7 @@ h3 {
 
 .before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
 .history .slick-slide a:before,
-.history .slick-slide a:after, .grad-line:after, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, .licensies a:before, .licensies a:after {
+.history .slick-slide a:after, .grad-line:after, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, .licensies a:before, .licensies a:after, .object-place:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4598,6 +4598,9 @@ main {
         top: 8px;
         width: 6px; }
 
+.main #map {
+  height: 32rem; }
+
 .inner-to-actioners main p {
   margin: 2rem 0; }
 
@@ -4704,6 +4707,19 @@ main {
     margin: 0; }
   .client strong {
     color: #fff; }
+
+.object-place {
+  color: #4a4a4a;
+  margin-top: -2rem;
+  padding: 2.5rem 0;
+  position: relative; }
+  .object-place h3 {
+    font-size: 1.4rem; }
+  .object-place:before {
+    border-top: 1px solid #30797a;
+    left: 0;
+    top: 0;
+    width: 15rem; }
 
 .history {
   margin-top: 3rem;

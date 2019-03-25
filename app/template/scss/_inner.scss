@@ -75,6 +75,12 @@ main{
 	}
 }
 
+
+.main{
+	#map{
+		height: 32rem;
+	}
+}
 .inner-to-actioners{
 	main{
 	p{
@@ -235,4 +241,22 @@ main{
 	strong{
 		color: $color2;		
 	}
+}
+
+
+.object-place{
+	color: $color6;
+	margin-top: -2rem;
+	padding: 2.5rem 0;
+	position: relative;
+	h3{
+		font-size: 1.4rem;		
+	}
+	&:before{
+		@extend .before;
+		border-top: 1px solid $color4;
+		left: 0;
+		top: 0;
+		width: 15rem;
+	};
 }
