@@ -318,8 +318,6 @@
 
 // news__list
 .news{
-	&__list{
-	}
 	&__item{
 		margin: 4rem 0;
 	}
@@ -340,17 +338,30 @@
 	&__text{
 		color: $color6;
 		line-height: 1.7;
-		margin: 4rem 0 1.2rem;
+		margin: 3.5rem 0 1.2rem;
+	}
+
+	&__date{
+		color: $color6;
+		display: block;
+		margin-top: 2rem;
 	}
 
 	&__link{
 		color: $color7;
-		text-decoration: underline;
-		text-decoration-color: $color4;			
+		// text-decoration: underline;
+		// text-decoration-color: $color4;
+		display: inline-block;
+		border-bottom: 1px solid $color4;	
 		&:hover{
 			color: $color7;
 			text-decoration: none;
 		}
 	}
+}
 
+.inner{
+	.item-news__text{
+		margin-top: 2rem;
+	}
 }

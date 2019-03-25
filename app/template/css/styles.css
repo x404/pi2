@@ -4101,15 +4101,23 @@ h3 {
 .item-news__text {
   color: #4a4a4a;
   line-height: 1.7;
-  margin: 4rem 0 1.2rem; }
+  margin: 3.5rem 0 1.2rem; }
+
+.item-news__date {
+  color: #4a4a4a;
+  display: block;
+  margin-top: 2rem; }
 
 .item-news__link {
   color: #808080;
-  text-decoration: underline;
-  text-decoration-color: #30797a; }
+  display: inline-block;
+  border-bottom: 1px solid #30797a; }
   .item-news__link:hover {
     color: #808080;
     text-decoration: none; }
+
+.inner .item-news__text {
+  margin-top: 2rem; }
 
 /* =mobile-menu
 ---------------------------*/
