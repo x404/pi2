@@ -3661,15 +3661,15 @@ h3 {
     text-decoration: underline; }
 
 .tdu, .plate a, .footer .copyright a,
-.footer .creators a, .cd-timeline-content .more a {
+.footer .creators a, .cd-timeline-content .more a, main a {
   text-decoration: underline; }
   .tdu:hover, .plate a:hover, .footer .copyright a:hover,
-  .footer .creators a:hover, .cd-timeline-content .more a:hover {
+  .footer .creators a:hover, .cd-timeline-content .more a:hover, main a:hover {
     text-decoration: none; }
 
 .before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
 .history .slick-slide a:before,
-.history .slick-slide a:after, .grad-line:after, .project__num:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, .licensies a:before, .licensies a:after {
+.history .slick-slide a:after, .grad-line:after, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, .licensies a:before, .licensies a:after {
   content: "";
   display: block;
   position: absolute; }
@@ -4546,12 +4546,16 @@ tbody.collapse.show {
   transition: height .35s ease; }
 
 main {
-  font-size: 1.6rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  color: #4a4a4a; }
+  main h3 {
+    margin: 2rem 0; }
   main p {
     margin: 3rem 0; }
-  main a:hover {
+  main a {
     color: #30797a; }
+    main a:hover {
+      color: #30797a; }
   main table {
     margin-top: 1.5rem;
     font-size: 1.4rem; }
@@ -4575,6 +4579,19 @@ main {
       padding: .7rem 2.5rem; }
     main .table a {
       color: #30797a; }
+  main ul {
+    list-style: none; }
+    main ul li {
+      margin: 1rem 0;
+      padding-left: 1.2rem;
+      position: relative; }
+      main ul li:before {
+        background-color: #4a4a4a;
+        border-radius: 50%;
+        height: 6px;
+        left: 0;
+        top: 8px;
+        width: 6px; }
 
 .inner-to-actioners main p {
   margin: 2rem 0; }
