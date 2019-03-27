@@ -3672,20 +3672,21 @@ h3 {
 
 .before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
 .history .slick-slide a:before,
-.history .slick-slide a:after, .grad-line:after, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, .licensies a:before, .licensies a:after, .object-place:before {
+.history .slick-slide a:after, .grad-line:after, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, a[data-fancybox]:before, a[data-fancybox]:after, .object-place:before {
   content: "";
   display: block;
   position: absolute; }
 
 .btn {
   border: 1px solid;
+  display: inline-block;
   font-size: 1.4rem;
-  margin: 0 1.3rem;
-  padding: .3rem 2.3rem;
   margin-left: 1.3rem;
   margin-top: 2rem;
+  margin: 0 1.3rem;
+  padding: .3rem 2.3rem;
   position: relative;
-  display: inline-block; }
+  text-decoration: none; }
   .btn-green {
     color: #30797a; }
     .btn-green:before {
@@ -3882,8 +3883,8 @@ h3 {
   display: flex;
   font-size: 1.8rem;
   font-weight: bold;
-  text-transform: uppercase;
-  padding-left: 26%; }
+  padding-left: 26%;
+  text-transform: uppercase; }
   .catline .cats li {
     border-left: 1px solid #30797a;
     height: 4.2rem;
@@ -3982,10 +3983,10 @@ h3 {
 
 .project__num {
   font-size: 1.8rem;
+  line-height: 1.2;
   margin-top: 2rem;
   padding-left: 3.4rem;
-  position: relative;
-  line-height: 1.2; }
+  position: relative; }
   .project__num:before {
     border-top: 5px solid #fff;
     bottom: 0;
@@ -4109,10 +4110,11 @@ h3 {
   margin-top: 2rem; }
 
 .item-news__link {
+  border-bottom: 1px solid #30797a;
   color: #808080;
-  display: inline-block;
-  border-bottom: 1px solid #30797a; }
+  display: inline-block; }
   .item-news__link:hover {
+    border-bottom: rgba(255, 255, 255, 0);
     color: #808080;
     text-decoration: none; }
 
@@ -4564,9 +4566,15 @@ tbody.collapse.show {
 main {
   padding-bottom: 3rem;
   color: #4a4a4a; }
+  main h2 {
+    font-size: 1.8rem;
+    font-weight: normal; }
+    main h2 + p {
+      margin-top: 1rem; }
   main h3 {
     margin: 2rem 0; }
   main p {
+    line-height: 1.8;
     margin: 3rem 0; }
   main a {
     color: #30797a; }
@@ -4649,31 +4657,33 @@ main {
 .licensies {
   margin-bottom: 5rem; }
   .licensies a {
-    position: relative;
-    display: block;
-    max-width: 270px; }
-    .licensies a:before, .licensies a:after {
-      opacity: 0;
-      transition: opacity .3s; }
-    .licensies a:before {
-      background: rgba(0, 0, 0, 0.3);
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0; }
-    .licensies a:after {
-      background: url(../images/zoom.png) no-repeat center;
-      height: 56px;
-      left: 50%;
-      top: 50%;
-      width: 54px;
-      transform: translate(-50%, -50%); }
-    .licensies a:hover:before, .licensies a:hover:after {
-      opacity: 1; }
+    max-width: 270px;
+    display: block; }
     .licensies a img {
       display: block;
       max-width: 100%;
       height: auto; }
+
+a[data-fancybox] {
+  position: relative; }
+  a[data-fancybox]:before, a[data-fancybox]:after {
+    opacity: 0;
+    transition: opacity .3s; }
+  a[data-fancybox]:before {
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; }
+  a[data-fancybox]:after {
+    background: url(../images/zoom.png) no-repeat center;
+    height: 56px;
+    left: 50%;
+    top: 50%;
+    width: 54px;
+    transform: translate(-50%, -50%); }
+  a[data-fancybox]:hover:before, a[data-fancybox]:hover:after {
+    opacity: 1; }
 
 #single-carousel {
   margin: 4rem 0 3.5rem; }
@@ -4732,6 +4742,27 @@ main {
     top: 0;
     width: 15rem; }
 
+.content-aside {
+  margin-top: 3rem; }
+  .content-aside .content {
+    padding-bottom: 0; }
+
+aside .submenu {
+  background-color: #30797a;
+  color: #fff;
+  padding: 1rem; }
+  aside .submenu li {
+    margin: .3rem 0; }
+  aside .submenu a {
+    color: #fff;
+    display: block;
+    padding: .2rem .7rem; }
+  aside .submenu .active a,
+  aside .submenu a:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none; }
+
 .history {
   margin-top: 3rem;
   padding-bottom: 0; }
@@ -4782,6 +4813,24 @@ main {
   padding-top: 3rem; }
   .bottomText p {
     margin: 1rem 0; }
+
+.page-error .text-error {
+  color: #30797a;
+  font-size: 3.6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .page-error .text-error p {
+    margin: 0;
+    line-height: 1.2; }
+  .page-error .text-error .code {
+    line-height: 1; }
+
+.page-error .main {
+  padding-bottom: 8rem; }
+
+.page-error .code {
+  font-weight: bold;
+  font-size: 15rem; }
 
 /* =mobile-menu
 ---------------------------*/

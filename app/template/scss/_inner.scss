@@ -3,11 +3,19 @@ main{
 	padding-bottom: 3rem;
 	color: $color6;
 
+	h2{
+		font-size: 1.8rem;
+		font-weight: normal;
+		& + p{
+			margin-top: 1rem;
+		}
+	}
 	h3{
 		margin: 2rem 0;
 	}
 
 	p{
+		line-height: 1.8;
 		margin: 3rem 0 
 	}
 
@@ -140,40 +148,44 @@ main{
 .licensies{
 	margin-bottom: 5rem;
 	a{
-		position: relative;
-		display: block;
 		max-width: 270px;
-		&:before,
-		&:after{
-			@extend .before;			
-			opacity: 0;
-			transition: opacity .3s;
-		}
-		&:before{
-			background: rgba(0,0,0,.3);
-			bottom: 0;
-			left: 0;
-			right: 0;
-			top: 0;
-		}
-		&:after{
-			background: url(../images/zoom.png) no-repeat center;
-			height: 56px;
-			left: 50%;
-			top: 50%;
-			width: 54px;
-			transform: translate(-50%, -50%);
-		}
-		&:hover{
-			&:before,
-			&:after{
-				opacity: 1;
-			}
-		}
+		display: block;
 		img{
 			display: block;
 			max-width: 100%;
 			height: auto;
+		}
+	}
+}
+
+
+a[data-fancybox]{
+	position: relative;
+	&:before,
+	&:after{
+		@extend .before;			
+		opacity: 0;
+		transition: opacity .3s;
+	}
+	&:before{
+		background: rgba(0,0,0,.3);
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+	&:after{
+		background: url(../images/zoom.png) no-repeat center;
+		height: 56px;
+		left: 50%;
+		top: 50%;
+		width: 54px;
+		transform: translate(-50%, -50%);
+	}
+	&:hover{
+		&:before,
+		&:after{
+			opacity: 1;
 		}
 	}
 }
@@ -259,4 +271,34 @@ main{
 		top: 0;
 		width: 15rem;
 	};
+}
+
+
+
+.content-aside{
+	margin-top: 3rem;
+	.content{
+		padding-bottom: 0;
+	}
+}
+aside{
+	.submenu{
+		background-color: $color4;
+		color: $color2;
+		padding: 1rem;
+		li{
+			margin: .3rem 0;
+		}
+		a{
+			color: $color2;
+			display: block;
+			padding: .2rem .7rem; 
+		}
+		.active a,
+		a:hover{
+				background-color: $color2;
+				color: $color1;
+				text-decoration: none;
+		}
+	}
 }

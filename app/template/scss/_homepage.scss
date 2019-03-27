@@ -18,8 +18,8 @@
 		display: flex;
 		font-size: 1.8rem;
 		font-weight: bold;
-		text-transform: uppercase;
 		padding-left: 26%;
+		text-transform: uppercase;
 		li{
 			border-left: 1px solid $color4;
 			height: 4.2rem;
@@ -41,8 +41,8 @@
 	margin-top: 10rem;
 	position: relative;
 	&:after{
-		background: url(../images/cat-arrow.gif) no-repeat;
 		@extend .before;
+		background: url(../images/cat-arrow.gif) no-repeat;
 		height: 40px;
 		right: -16px;
 		top: -6px;
@@ -154,10 +154,10 @@
 	}
 	&__num{
 		font-size: 1.8rem;
+		line-height: 1.2;
 		margin-top: 2rem;
 		padding-left: 3.4rem;
 		position: relative;
-		line-height: 1.2;
 		&:before{
 			@extend .before;
 			border-top: 5px solid $color2;
@@ -348,12 +348,11 @@
 	}
 
 	&__link{
-		color: $color7;
-		// text-decoration: underline;
-		// text-decoration-color: $color4;
-		display: inline-block;
 		border-bottom: 1px solid $color4;	
+		color: $color7;
+		display: inline-block;
 		&:hover{
+			border-bottom: rgba(255,255,255,0);
 			color: $color7;
 			text-decoration: none;
 		}
