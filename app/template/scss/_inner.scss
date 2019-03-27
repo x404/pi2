@@ -160,6 +160,7 @@ main{
 
 
 a[data-fancybox]{
+	display: block;
 	position: relative;
 	&:before,
 	&:after{

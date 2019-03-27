@@ -4665,6 +4665,7 @@ main {
       height: auto; }
 
 a[data-fancybox] {
+  display: block;
   position: relative; }
   a[data-fancybox]:before, a[data-fancybox]:after {
     opacity: 0;
@@ -4831,6 +4832,44 @@ aside .submenu {
 .page-error .code {
   font-weight: bold;
   font-size: 15rem; }
+
+.accordion .card {
+  margin: 1rem 0; }
+
+.accordion .btn {
+  background-color: #30797a;
+  background-image: linear-gradient(to right, #30797a, #8bb2ba);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  text-transform: uppercase; }
+  .accordion .btn.collapsed {
+    background-color: #848484;
+    background-image: linear-gradient(to right, #848484, #cacaca); }
+    .accordion .btn.collapsed:before {
+      content: "-"; }
+  .accordion .btn:before {
+    border: none;
+    content: "+";
+    font-size: 3rem;
+    height: 15px;
+    left: auto;
+    line-height: .5;
+    right: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -8px;
+    width: 15px; }
+
+.accordion .card-body {
+  padding: 2rem 0; }
 
 /* =mobile-menu
 ---------------------------*/
