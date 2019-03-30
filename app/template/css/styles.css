@@ -4767,6 +4767,34 @@ aside .submenu {
     color: #000;
     text-decoration: none; }
 
+div.pagination {
+  display: flex;
+  padding-left: 25.6rem;
+  padding-bottom: 2rem; }
+  div.pagination ul {
+    border-top: 1px solid #30797a;
+    display: flex;
+    padding: 1.7rem 1.5rem 0; }
+    div.pagination ul li {
+      margin: 0 .5rem; }
+      div.pagination ul li.active a, div.pagination ul li.active span {
+        background-color: #30797a;
+        color: #fff;
+        text-decoration: none; }
+  div.pagination a {
+    align-items: center;
+    border: 1px solid #30797a;
+    color: #30797a;
+    display: block;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    width: 3rem; }
+    div.pagination a:hover {
+      background-color: #30797a;
+      color: #fff;
+      text-decoration: none; }
+
 .history {
   margin-top: 3rem;
   padding-bottom: 0; }

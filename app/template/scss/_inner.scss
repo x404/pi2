@@ -91,55 +91,55 @@ main{
 }
 .inner-to-actioners{
 	main{
-	p{
-		margin: 2rem 0;
-	}
-	p a{
-		color: $color1;
-		&:hover{color: $color4;}
+		p{
+			margin: 2rem 0;
+		}
+		p a{
+			color: $color1;
+			&:hover{color: $color4;}
 
-		&[href$=".pdf"],
-		&[href$=".rar"]
-		{
-			min-height: 40px;
-			display: inline-block;
-			padding-top: 7px;
-			position: relative;
-			padding-left: 53px;
-			&:before{
-				@extend .before;
-				align-items: center;
-				background-color: #a6a6a6;
-				border-radius: 50%;
-				color: $color2;
-				display: flex;
-				height: 40px;
-				justify-content: center;
-				left: 0;
-				transition: background-color .3s;
-				text-align: center;
-				text-transform: uppercase;
-				width: 40px;
-				top: 0;
-			}
-			&:hover{
+			&[href$=".pdf"],
+			&[href$=".rar"]
+			{
+				min-height: 40px;
+				display: inline-block;
+				padding-top: 7px;
+				position: relative;
+				padding-left: 53px;
 				&:before{
-					background-color: $color4;
-				}				
+					@extend .before;
+					align-items: center;
+					background-color: #a6a6a6;
+					border-radius: 50%;
+					color: $color2;
+					display: flex;
+					height: 40px;
+					justify-content: center;
+					left: 0;
+					transition: background-color .3s;
+					text-align: center;
+					text-transform: uppercase;
+					width: 40px;
+					top: 0;
+				}
+				&:hover{
+					&:before{
+						background-color: $color4;
+					}				
+				}
 			}
-		}
 
-		&[href$=".pdf"]{
-			&:before{
-				content: "PDF";
+			&[href$=".pdf"]{
+				&:before{
+					content: "PDF";
+				}
+			}
+			&[href$=".rar"]{
+				&:before{
+					content: "RAR";
+				}
 			}
 		}
-		&[href$=".rar"]{
-			&:before{
-				content: "RAR";
-			}
-		}
-	}
 
 	}
 }
@@ -300,6 +300,43 @@ aside{
 				background-color: $color2;
 				color: $color1;
 				text-decoration: none;
+		}
+	}
+}
+
+
+div.pagination{
+	display: flex;
+	padding-left: 25.6rem;
+	padding-bottom: 2rem;
+	ul{
+		border-top: 1px solid $color4;
+		display: flex;
+		padding: 1.7rem 1.5rem 0;
+		li{
+			margin: 0 .5rem;
+			&.active{
+				a,span{
+					background-color: $color4;
+					color: $color2;
+					text-decoration: none;					
+				}
+			}
+		}
+	}
+	a{
+		align-items: center;
+		border: 1px solid $color4;
+		color: $color4;
+		display: block;
+		display: flex;
+		height: 3rem;
+		justify-content: center;
+		width: 3rem;
+		&:hover{
+			background-color: $color4;
+			color: $color2;
+			text-decoration: none;
 		}
 	}
 }
