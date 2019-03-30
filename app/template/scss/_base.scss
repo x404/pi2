@@ -415,13 +415,19 @@ em strong
 	}
 
 	.copyright{
-		margin-top: 4.5rem;
+		// margin-top: 4.5rem;
 	}
 
+	.copyright-creators{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 
 	.creators{
 		font-size: 1.3rem;
 		margin-top: 3.5rem;
+		margin-bottom: .2rem;
 		p{
 			white-space: nowrap;
 		}

@@ -3846,11 +3846,14 @@ h3 {
     .footer .copyright a,
     .footer .creators a {
       color: #30797a; }
-  .footer .copyright {
-    margin-top: 4.5rem; }
+  .footer .copyright-creators {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .footer .creators {
     font-size: 1.3rem;
-    margin-top: 3.5rem; }
+    margin-top: 3.5rem;
+    margin-bottom: .2rem; }
     .footer .creators p {
       white-space: nowrap; }
 
