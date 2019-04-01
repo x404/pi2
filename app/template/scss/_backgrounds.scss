@@ -1,6 +1,11 @@
 .webp{
 	.homepage{
-		background-image: url(../images/bg/bg-1.webp);
+		&.bg-1{
+			background-image: url(../images/bg/bg-1-1.webp);
+		}
+		&.bg-2{
+			background-image: url(../images/bg/bg-1-2.webp);
+		}
 		.about{
 			background-image: url(../images/bg/bg-3.webp);			
 		}
@@ -50,7 +55,13 @@
 
 .homepage
 {
-	background-image: url(../images/bg/bg-1.jpg);
+	&.bg-1{
+		background-image: url(../images/bg/bg-1-1.jpg);			
+	}
+	&.bg-2{
+		background-image: url(../images/bg/bg-1-2.jpg);			
+	}
+
 	background-position: left 80px;
 	.about{
 		background-image: url(../images/bg/bg-3.jpg);

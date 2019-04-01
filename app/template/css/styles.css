@@ -3301,12 +3301,17 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: transparent;
   border: 0; }
 
-.webp .homepage {
-  background-image: url(../images/bg/bg-1.webp); }
-  .webp .homepage .about {
-    background-image: url(../images/bg/bg-3.webp); }
-  .webp .homepage .history {
-    background-image: url(../images/bg/bg-4.webp); }
+.webp .homepage.bg-1 {
+  background-image: url(../images/bg/bg-1-1.webp); }
+
+.webp .homepage.bg-2 {
+  background-image: url(../images/bg/bg-1-2.webp); }
+
+.webp .homepage .about {
+  background-image: url(../images/bg/bg-3.webp); }
+
+.webp .homepage .history {
+  background-image: url(../images/bg/bg-4.webp); }
 
 .webp .linkbox {
   background-image: url(../images/bg/bg-5.webp); }
@@ -3334,8 +3339,11 @@ a.text-dark:hover, a.text-dark:focus {
   background-position: right top; }
 
 .homepage {
-  background-image: url(../images/bg/bg-1.jpg);
   background-position: left 80px; }
+  .homepage.bg-1 {
+    background-image: url(../images/bg/bg-1-1.jpg); }
+  .homepage.bg-2 {
+    background-image: url(../images/bg/bg-1-2.jpg); }
   .homepage .about {
     background-image: url(../images/bg/bg-3.jpg); }
   .homepage .history {
@@ -3933,7 +3941,7 @@ h3 {
 
 .homepage .timeline {
   padding-bottom: 1px;
-  margin-bottom: 2rem; }
+  margin-bottom: 8rem; }
 
 .homepage .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
   left: 15%;
@@ -3984,7 +3992,7 @@ h3 {
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   transition: background-color .3s; }
 
 .project__link {
