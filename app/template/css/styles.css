@@ -4613,12 +4613,27 @@ main {
       padding-left: 1.2rem;
       position: relative; }
       main ul li:before {
-        background-color: #4a4a4a;
+        background-color: #30797a;
         border-radius: 50%;
         height: 6px;
         left: 0;
-        top: 8px;
+        top: 7px;
         width: 6px; }
+  main ol {
+    counter-reset: li;
+    list-style: none; }
+    main ol li {
+      padding-left: 20px;
+      position: relative; }
+      main ol li:before {
+        color: #30797a;
+        content: counter(li, decimal) ".";
+        counter-increment: li;
+        font-size: 14px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 20px; }
 
 .main #map {
   height: 32rem; }
