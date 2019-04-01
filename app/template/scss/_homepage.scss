@@ -14,6 +14,7 @@
 
 // =gradline
 .catline{
+	position: relative;
 	.cats{
 		display: flex;
 		font-size: 1.8rem;
@@ -69,7 +70,77 @@
 }
 // =/gradline
 
+.modal-cat{
+	background: $color4;
+	color: $color2;
+	left: 50%;
+	padding: 2.5rem 1.5rem;
+	position: absolute;
+	top: 70px;
+	transform: translateX(-50%);
+	width: 55rem;
+	z-index: 10;
+	.title{
+		font-size: 1.8rem;
+		padding-bottom: .5rem;
+	}
+	.carousel{
+		margin-top: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+		width: 460px;
+		display: flex;
+		&.slick-initialized{
+			display: block;
+		}
+		.slick-slide{
+			text-align: center;
+		}
+		a{
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			&:before{
+				@extend .before;
+				background-color: rgba(48, 121, 122, .5);
+				z-index: 1;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				opacity: 0;
+				transition: opacity .3s;
+			}
+			&:hover{
+				&:before,
+				&:after{
+					opacity: 1;
+				}
+			}
+		}
+	}
 
+	.slick{
+		&-arrow{
+			filter: invert(1);
+			width: 18px;
+			height: 15px;
+			padding: 0;
+			img{
+				display: block;
+			}
+		}
+		&-prev{
+			left: -30px;
+			transform: scale(-1, 1) translateY(-50%);
+		}
+		&-next{
+			right: -30px;
+		}
+
+	}
+}
 
 
 .homepage{
