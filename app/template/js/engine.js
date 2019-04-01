@@ -189,3 +189,11 @@ $(document).ready(function(){
 	});
 
 });
+
+
+
+
+document.querySelector('.grad-line').addEventListener("mousemove", function(e){
+	// console.log(e.offsetX);
+	document.querySelector('.grad-line-hover').style.width = e.offsetX + 'px';
+}, false);

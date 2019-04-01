@@ -3672,7 +3672,7 @@ h3 {
 
 .before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
 .history .slick-slide a:before,
-.history .slick-slide a:after, .grad-line:after, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, a[data-fancybox]:before, a[data-fancybox]:after, .object-place:before {
+.history .slick-slide a:after, .grad-line:before, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, a[data-fancybox]:before, a[data-fancybox]:after, .object-place:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3903,12 +3903,25 @@ h3 {
   height: 2.8rem;
   margin-top: 10rem;
   position: relative; }
-  .grad-line:after {
+  .grad-line-hover {
+    background: url(../images/cat-arrow-hover.gif);
+    height: 2.8rem;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    will-change: width; }
+  .grad-line:before {
     background: url(../images/cat-arrow.gif) no-repeat;
     height: 40px;
     right: -16px;
     top: -6px;
     width: 16px; }
+  .grad-line:hover {
+    z-index: 1; }
+    .grad-line:hover .grad-line-hover {
+      opacity: 1; }
 
 .homepage .history {
   min-height: 615px;

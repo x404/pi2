@@ -40,13 +40,31 @@
 	height: 2.8rem;
 	margin-top: 10rem;
 	position: relative;
-	&:after{
+	&-hover{
+		background: url(../images/cat-arrow-hover.gif);
+		height: 2.8rem;
+		left: 0;
+		// opacity: 0;
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		width: 1px;
+		will-change: width
+	}
+	&:before{
 		@extend .before;
 		background: url(../images/cat-arrow.gif) no-repeat;
 		height: 40px;
 		right: -16px;
 		top: -6px;
 		width: 16px;
+	}
+
+	&:hover{
+		z-index: 1;
+		.grad-line-hover{
+			opacity: 1;
+		}
 	}
 }
 // =/gradline
