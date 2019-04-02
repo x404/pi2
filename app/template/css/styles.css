@@ -3347,7 +3347,8 @@ a.text-dark:hover, a.text-dark:focus {
   .homepage .about {
     background-image: url(../images/bg/bg-3.jpg); }
   .homepage .history {
-    background-image: url(../images/bg/bg-4.jpg); }
+    background-image: url(../images/bg/bg-4.jpg);
+    background-position: left 40px; }
 
 .linkbox {
   background-image: url(../images/bg/bg-5.jpg); }
@@ -3713,12 +3714,18 @@ h3 {
 /* =header
 ---------------------------*/
 .header {
-  padding: 9.5rem 0 17rem; }
+  padding: 4.5rem 0 20rem; }
 
 .logo {
+  align-items: center;
   color: #666;
+  display: flex;
+  font-size: 3rem;
   font-weight: bold;
-  font-size: 3rem; }
+  justify-content: center; }
+  .logo img {
+    display: block;
+    margin: -1.2rem 1rem 0; }
 
 /* =/header
 ---------------------------*/
@@ -3726,7 +3733,7 @@ h3 {
 ---------------------------*/
 .navmenu {
   font-size: 1.8rem;
-  margin-top: 10.5rem; }
+  margin-top: 5.5rem; }
   .navmenu .nav {
     display: flex;
     justify-content: center; }
@@ -3891,7 +3898,7 @@ h3 {
   font-size: 3.6rem;
   line-height: 1;
   padding-left: 42%;
-  padding-top: 31rem; }
+  padding-top: 28.5rem; }
   .slogan .num {
     line-height: .8;
     font-weight: bold;
@@ -4025,7 +4032,7 @@ h3 {
 
 .homepage .history {
   min-height: 615px;
-  margin-top: -24rem; }
+  margin-top: -30rem; }
   .homepage .history .cd-timeline-block {
     margin-bottom: 11rem; }
   .homepage .history .cd-timeline-content {
@@ -4056,11 +4063,11 @@ h3 {
     top: 0; }
 
 .homepage .projects {
-  margin-top: -6.7rem; }
+  margin-top: -4rem; }
   .homepage .projects header {
     padding-left: 32%; }
   .homepage .projects__list {
-    margin-top: 4rem; }
+    margin-top: 3.4rem; }
   .homepage .projects__item:nth-child(1) {
     margin-top: 0px; }
   .homepage .projects__item:nth-child(2) {
@@ -4071,7 +4078,7 @@ h3 {
     margin-top: 48px; }
   .homepage .projects .more {
     margin-left: 56%;
-    margin-top: 1.2rem; }
+    margin-top: 3.5rem; }
 
 .homepage .news__list {
   margin-top: 1.5rem; }
