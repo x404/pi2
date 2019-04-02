@@ -3743,8 +3743,6 @@ h3 {
         color: #000; }
         .navmenu .nav > li a:hover {
           text-decoration-color: #30797a; }
-  .navmenu .subnav {
-    display: none; }
 
 /* =/navigation
 ---------------------------*/
@@ -4262,8 +4260,6 @@ h3 {
 /* =/mobile-menu
 ---------------------------*/
 @media (max-width: 767px) {
-  .subnav {
-    display: none; }
   .navmenu {
     height: 100%;
     margin-left: 0;
@@ -5055,8 +5051,6 @@ div.pagination {
 /* =/mobile-menu
 ---------------------------*/
 @media (max-width: 767px) {
-  .subnav {
-    display: none; }
   .navmenu {
     height: 100%;
     margin-left: 0;
