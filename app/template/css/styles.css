@@ -589,7 +589,7 @@ template {
       max-width: 960px; } }
   @media (min-width: 1250px) {
     .container {
-      max-width: 1200px; } }
+      max-width: 1220px; } }
 
 .container-fluid {
   width: 100%;
@@ -4935,8 +4935,8 @@ aside .submenu {
 
 div.pagination {
   display: flex;
-  padding-left: 25.6rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  padding-left: 25.6rem; }
   div.pagination ul {
     border-top: 1px solid #30797a;
     display: flex;
@@ -5067,6 +5067,24 @@ div.pagination {
 
 .accordion .card-body {
   padding: 2rem 0; }
+
+aside .filter-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-left: .5rem; }
+
+aside .filter-block {
+  margin-bottom: 3.5rem;
+  padding: 2rem 1rem; }
+  aside .filter-block li a {
+    display: flex;
+    justify-content: space-between; }
+
+.projects-page div.pagination {
+  padding-left: 0; }
+
+.inner .projects__item {
+  margin-bottom: 3rem; }
 
 /* =mobile-menu
 ---------------------------*/
