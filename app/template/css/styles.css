@@ -3680,7 +3680,7 @@ h3 {
 
 .before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
 .history .slick-slide a:before,
-.history .slick-slide a:after, .grad-line:before, .modal-cat .carousel a:before, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, a[data-fancybox]:before, a[data-fancybox]:after, .object-place:before {
+.history .slick-slide a:after, .grad-line:before, .modal-cat .link:after, .modal-cat .carousel a:before, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, a[data-fancybox]:before, a[data-fancybox]:after, .object-place:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3867,6 +3867,13 @@ h3 {
 
 /* =/footer
 ---------------------------*/
+.transparent-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0; }
+
 @font-face {
   font-family: 'Avanti';
   src: local("Avanti"), url("../fonts/Avanti/Avanti.woff2") format("woff2"), url("../fonts/Avanti/Avanti.woff") format("woff");
@@ -3904,6 +3911,8 @@ h3 {
       padding-left: .8rem;
       padding-top: 1.5rem;
       width: 33%; }
+      .catline .cats li a.active {
+        color: #30797a; }
     .catline .cats a:hover {
       color: #30797a;
       text-decoration: none; }
@@ -3933,16 +3942,43 @@ h3 {
     .grad-line:hover .grad-line-hover {
       opacity: 1; }
 
+#modal-history {
+  transform: none;
+  margin-left: -25%; }
+
+#modal-projects {
+  transform: translateX(-50%); }
+
+#modal-bim {
+  transform: translateX(10%); }
+
 .modal-cat {
   background: #30797a;
   color: #fff;
   left: 50%;
+  opacity: 0;
   padding: 2.5rem 1.5rem;
   position: absolute;
   top: 70px;
   transform: translateX(-50%);
+  transition: opacity .3s;
   width: 55rem;
-  z-index: 10; }
+  z-index: -1; }
+  .modal-cat.show {
+    z-index: 10;
+    opacity: 1; }
+  .modal-cat .link:after {
+    background: url(../images/arrow-more.png) no-repeat left top;
+    height: 40px;
+    left: 50%;
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s;
+    width: 40px;
+    z-index: 10; }
+  .modal-cat .link:hover:after {
+    opacity: 1; }
   .modal-cat .title {
     font-size: 1.8rem;
     padding-bottom: .5rem; }
@@ -3957,10 +3993,12 @@ h3 {
     .modal-cat .carousel .slick-slide {
       text-align: center; }
     .modal-cat .carousel a {
-      display: inline-block;
+      display: block;
       margin-left: auto;
       margin-right: auto;
-      position: relative; }
+      position: relative;
+      height: 70px;
+      width: 70px; }
       .modal-cat .carousel a:before {
         background-color: rgba(48, 121, 122, 0.5);
         z-index: 1;
