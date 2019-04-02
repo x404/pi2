@@ -3679,7 +3679,7 @@ h3 {
   .footer .creators a:hover, .cd-timeline-content .more a:hover, main a:hover {
     text-decoration: none; }
 
-.before, .btn:before, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
+.before, .btn:before, .navmenu .subnav ul li:after, .footer .lastprojects__item a:before, .footer .lastprojects__item a:after,
 .history .slick-slide a:before,
 .history .slick-slide a:after, .grad-line:before, .modal-cat .link:after, .modal-cat .carousel a:before, .project__num:before, main ul li:before, .inner-to-actioners main p a[href$=".pdf"]:before, .inner-to-actioners main p a[href$=".rar"]:before, a[data-fancybox]:before, a[data-fancybox]:after, .object-place:before {
   content: "";
@@ -3736,24 +3736,56 @@ h3 {
   margin-top: 5.5rem; }
   .navmenu .nav {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    left: -30px;
+    position: relative; }
     .navmenu .nav > li {
       margin: 0 2.4rem; }
+      .navmenu .nav > li.active > a,
+      .navmenu .nav > li.active > span {
+        cursor: default;
+        border-bottom-color: #30797a; }
       .navmenu .nav > li a {
-        color: #000; }
+        color: #000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0); }
         .navmenu .nav > li a:hover {
-          text-decoration-color: #30797a; }
+          text-decoration: none;
+          border-bottom-color: #30797a; }
+  .navmenu .subnav {
+    margin-top: 2.5rem;
+    position: absolute; }
+    .navmenu .subnav ul {
+      display: flex; }
+      .navmenu .subnav ul li {
+        margin-right: 1.8rem;
+        padding-right: 1.8rem;
+        position: relative; }
+        .navmenu .subnav ul li:after {
+          border-right: 1px solid #666;
+          height: 12px;
+          right: 0;
+          top: 7px; }
+        .navmenu .subnav ul li.active a, .navmenu .subnav ul li.active span {
+          border-bottom-color: #30797a; }
+        .navmenu .subnav ul li:last-child:after {
+          display: none; }
+      .navmenu .subnav ul a {
+        color: #666;
+        border-bottom: 1px solid rgba(255, 255, 255, 0); }
+        .navmenu .subnav ul a:hover {
+          border-bottom-color: #30797a;
+          text-decoration: none; }
 
 /* =/navigation
 ---------------------------*/
 /* =main
 ---------------------------*/
 .visually-hidden {
-  position: absolute;
-  width: 1px;
+  clip: rect(0 0 0 0);
   height: 1px;
   overflow: hidden;
-  clip: rect(0 0 0 0); }
+  position: absolute;
+  width: 1px; }
 
 /* =plate
 ---------------------------*/
@@ -4787,6 +4819,9 @@ main {
     content: "PDF"; }
   .inner-to-actioners main p a[href$=".rar"]:before {
     content: "RAR"; }
+
+.inner .header {
+  padding-bottom: 11rem; }
 
 .licensies {
   margin-bottom: 5rem; }

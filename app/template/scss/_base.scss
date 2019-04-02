@@ -236,17 +236,67 @@ em strong
 	.nav{
 		display: flex;
 		justify-content: center;
+		left: -30px;
+		position: relative;
 		& > li{
 			margin: 0 2.4rem;
+			&.active{
+				& > a, 
+				& > span{
+					cursor: default;
+					border-bottom-color: $color4;
+				}
+			}
+
+
 			a{
 				color: $color1;
+				border-bottom: 1px solid rgba(255,255,255,0);
 				&:hover{
-					text-decoration-color: $color4;
+					text-decoration: none;
+					border-bottom-color: $color4;
+					// text-decoration-color: $color4;
 				}
 			}
 		}
 	}
 	.subnav{
+		margin-top: 2.5rem;
+		position: absolute;
+		ul{
+			display: flex;
+			li{
+				margin-right: 1.8rem;
+				padding-right: 1.8rem;
+				position: relative;
+				&:after{
+					@extend .before;
+					border-right: 1px solid $color3;
+					height: 12px;
+					right: 0;
+					top: 7px;
+				}
+				&.active{
+					a, span{
+						border-bottom-color: $color4;
+					}
+				}
+
+				&:last-child{
+					&:after{
+						display: none;
+					}
+				}
+			}
+			a{
+				color: #666;
+				border-bottom: 1px solid rgba(255,255,255,0);
+				&:hover{
+					border-bottom-color: $color4;
+					text-decoration: none;	
+				}
+			}
+		}
 		// display: none;
 	}
 }
@@ -256,20 +306,12 @@ em strong
 
 /* =main
 ---------------------------*/
-
-.main{
-	aside{
-	}
-}
-
-
-
 .visually-hidden{
-	position: absolute;
-	width: 1px;
+	clip: rect(0 0 0 0);
 	height: 1px;
 	overflow: hidden;
-	clip: rect(0 0 0 0);
+	position: absolute;
+	width: 1px;
 }
 
 
