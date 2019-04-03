@@ -421,7 +421,9 @@ em strong
 		&__item{
 			margin-right: 1.8rem;
 			margin-bottom: 1.8rem;
-
+			&:nth-child(3n){
+				margin-right: 0;
+			}
 		}
 	}
 
