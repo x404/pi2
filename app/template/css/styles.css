@@ -5511,7 +5511,13 @@ aside .filter-block {
     text-align: center;
     padding-left: 0; }
     .accordion .collapse-pic a {
-      display: inline-block; } }
+      display: inline-block; }
+  .inner .news__list .item-news__desc {
+    margin-left: 0;
+    margin-top: 2rem; }
+  .inner .pagination {
+    padding-left: 0;
+    justify-content: center; } }
 
 @media (max-width: 650px) {
   .catline {

@@ -284,6 +284,20 @@
 			}
 		}
 	}
+
+	.inner{
+		.news__list{
+			.item-news__desc{
+				margin-left: 0;
+				margin-top: 2rem;
+			}
+		}
+
+		.pagination{
+			padding-left: 0;
+			justify-content: center;
+		}
+	}
 }
 
 
@@ -293,6 +307,8 @@
 	}
 }
 
+@media (max-width: 576px){
+}
 
 
 @media (max-width: 570px){
