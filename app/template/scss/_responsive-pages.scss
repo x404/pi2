@@ -261,12 +261,16 @@
 	.history .slick-slider{
 		width: 350px;
 	}
-}
 
-
-@media (max-width: 767px){
 	.activity__link{
 		max-width: 23rem
+	}
+
+	.licensies{
+		margin-bottom: 0;
+		a{
+			margin-bottom: 2rem;
+		}
 	}
 }
 

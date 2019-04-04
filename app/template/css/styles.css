@@ -5490,11 +5490,13 @@ aside .filter-block {
   .history .more {
     text-align: center; }
   .history .slick-slider {
-    width: 350px; } }
-
-@media (max-width: 767px) {
+    width: 350px; }
   .activity__link {
-    max-width: 23rem; } }
+    max-width: 23rem; }
+  .licensies {
+    margin-bottom: 0; }
+    .licensies a {
+      margin-bottom: 2rem; } }
 
 @media (max-width: 650px) {
   .catline {

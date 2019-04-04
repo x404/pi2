@@ -6068,10 +6068,15 @@ aside .filter-block {
     text-align: center; }
 
   .history .slick-slider {
-    width: 350px; } }
-@media (max-width: 767px) {
+    width: 350px; }
+
   .activity__link {
-    max-width: 23rem; } }
+    max-width: 23rem; }
+
+  .licensies {
+    margin-bottom: 0; }
+    .licensies a {
+      margin-bottom: 2rem; } }
 @media (max-width: 650px) {
   .catline {
     display: none !important; } }
@@ -6124,6 +6129,8 @@ aside .filter-block {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
   .inner .history .slick-slider {
-    width: 160px; }
+    width: 180px; }
+  .inner .history .slick-arrow {
+    display: none; }
   .inner .history .cd-timeline-content {
     width: 220px; } }
