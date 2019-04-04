@@ -159,6 +159,23 @@
 		margin: 3rem;
 	}
 
+
+	main{
+		.gallery{
+			a{
+				width: 32%;
+			}
+		}
+	}
+
+	.inner{
+		.main{
+			h1{
+				text-align: center;
+			}
+		}
+	}
+
 }
 
 
@@ -245,7 +262,9 @@
 		}
 	}
 
-	header{
+	header,
+	main,
+	.main {
 		h1{
 			text-align: center;
 		}

@@ -100,6 +100,18 @@ main{
 			}
 		}
 	}
+
+	.gallery{
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+		a{
+			margin-bottom: 2rem;
+			display: block;
+		}
+	}
 }
 
 
@@ -308,7 +320,7 @@ a[data-fancybox]{
 	}
 }
 aside{
-	.submenu{
+	div.submenu{
 		background-color: $color4;
 		color: $color2;
 		padding: 1rem;
@@ -322,10 +334,18 @@ aside{
 		}
 		.active a,
 		a:hover{
-				background-color: $color2;
-				color: $color1;
-				text-decoration: none;
+			background-color: $color2;
+			color: $color1;
+			text-decoration: none;
 		}
+	}
+
+	select.submenu{
+		margin: 0 auto 3rem;
+		width: 250px;
+		display: block;
+		height: 3rem;
+		font-size: 1.6rem;
 	}
 }
 
