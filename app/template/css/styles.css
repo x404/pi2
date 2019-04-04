@@ -4194,6 +4194,7 @@ h3 {
   .activity h1 {
     margin-bottom: 4rem; }
   .activity__link {
+    background-color: #fff;
     border: 1px solid #30797a;
     color: #4a4a4a;
     display: block;
@@ -5442,7 +5443,9 @@ aside .filter-block {
   .history .cd-date {
     left: 116%; }
   .history .slick-slider {
-    width: 240px; } }
+    width: 240px; }
+  .activity__plate {
+    margin: 3rem; } }
 
 @media (max-width: 990px) {
   .history .cd-timeline-content {
