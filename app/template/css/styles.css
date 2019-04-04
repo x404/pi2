@@ -5319,6 +5319,8 @@ aside .filter-block {
       font-size: 11rem; } }
 
 @media (max-width: 575px) {
+  .main-grid {
+    display: block !important; }
   .footer {
     text-align: center; }
     .footer__menu .column {
@@ -5517,7 +5519,11 @@ aside .filter-block {
     margin-top: 2rem; }
   .inner .pagination {
     padding-left: 0;
-    justify-content: center; } }
+    justify-content: center; }
+  #single-carousel .slick-slide img {
+    height: auto;
+    display: block;
+    width: 100%; } }
 
 @media (max-width: 650px) {
   .catline {

@@ -298,6 +298,16 @@
 			justify-content: center;
 		}
 	}
+
+	#single-carousel{
+		.slick-slide{
+			img{
+				height: auto;
+				display: block;
+				width: 100%;
+			}
+		}
+	}
 }
 
 
