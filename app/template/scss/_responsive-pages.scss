@@ -338,6 +338,15 @@
 		padding-left: 0;
 		padding-top: 1rem;
 	}
+
+	.page-error{
+		.text-error{
+			font-size: 2.6rem;
+		}
+		.code{
+			font-size: 10rem;
+		}
+	}
 }
 
 
@@ -358,6 +367,15 @@
 		}
 		.slick-slider{
 			width: 280px;
+		}
+	}
+
+	.page-error{
+		.main{
+			padding-bottom: 0;
+		}
+		main{
+			padding-bottom: 1rem;
 		}
 	}
 }

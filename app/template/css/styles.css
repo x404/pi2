@@ -5553,7 +5553,11 @@ aside .filter-block {
     width: 100%; }
   .project__area {
     padding-left: 0;
-    padding-top: 1rem; } }
+    padding-top: 1rem; }
+  .page-error .text-error {
+    font-size: 2.6rem; }
+  .page-error .code {
+    font-size: 10rem; } }
 
 @media (max-width: 650px) {
   .catline {
@@ -5563,7 +5567,11 @@ aside .filter-block {
   .inner .history .cd-timeline-content {
     width: 85%; }
   .inner .history .slick-slider {
-    width: 280px; } }
+    width: 280px; }
+  .page-error .main {
+    padding-bottom: 0; }
+  .page-error main {
+    padding-bottom: 1rem; } }
 
 @media (max-width: 550px) {
   .about,
