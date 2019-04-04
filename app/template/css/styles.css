@@ -5550,7 +5550,10 @@ aside .filter-block {
   #single-carousel .slick-slide img {
     height: auto;
     display: block;
-    width: 100%; } }
+    width: 100%; }
+  .project__area {
+    padding-left: 0;
+    padding-top: 1rem; } }
 
 @media (max-width: 650px) {
   .catline {
