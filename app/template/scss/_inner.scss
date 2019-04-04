@@ -251,6 +251,12 @@ a[data-fancybox]{
 		&-next{
 			right: -33px;
 		}
+
+		&-slide{
+			img{
+				width: 100%;
+			}
+		}
 	}
 }
 

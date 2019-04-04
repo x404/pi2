@@ -4887,6 +4887,8 @@ a[data-fancybox] {
     left: -33px; }
   #single-carousel .slick-next {
     right: -33px; }
+  #single-carousel .slick-slide img {
+    width: 100%; }
 
 #single-carousel ~ .project__about {
   margin-top: -3.5rem; }
@@ -5326,6 +5328,8 @@ aside .filter-block {
 @media (max-width: 768px) {
   .header {
     padding-bottom: 0; }
+  .inner .header {
+    padding-bottom: 3rem; }
   .slogan {
     font-size: 3.2rem;
     padding-top: 7rem;
