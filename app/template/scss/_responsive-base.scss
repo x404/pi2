@@ -1,3 +1,17 @@
+@media (max-width: 1550px){
+	.navmenu .subnav{
+		left: 50%;
+		transform: translateX(-45%);
+		ul{
+			flex-wrap: wrap;
+		}
+		a{
+			white-space: nowrap;
+		}
+	}
+}
+
+
 @media (max-width: 1450px){
 	.slogan{
 		padding-left: 600px;
@@ -67,7 +81,7 @@
 		.lastprojects{
 			justify-content: center;
 		}
-		
+
 		.social{
 			margin-top: 1rem;
 			ul{

@@ -89,62 +89,45 @@ $(document).ready(function(){
 		nextArrow:'<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><img src="/template/images/arrow.svg" alt="" /></button>',
 		responsive: [
 			{
-				breakpoint: 1250,
+				breakpoint: 1400,
 				settings: {
-					slidesToShow: 5,
+					slidesToShow: 4,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 992,
+				breakpoint: 1250,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
 			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 1
+				}
+			},
+			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '70px'
-				}
-			},
-			{
-				breakpoint: 650,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '60px'
-				}
-			},
-			{
-				breakpoint: 560,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '40px'
+					slidesToShow: 3,
+					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 450,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '15px'
-				}
-			},
-			{
-				breakpoint: 400,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '60px'
+					slidesToScroll: 1
 				}
 			}
 		]
