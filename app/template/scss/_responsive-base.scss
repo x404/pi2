@@ -108,6 +108,12 @@
 			font-size: 9rem;
 		}
 	}
+
+	.inner{
+		.header{
+			padding-bottom: 4rem;
+		}
+	}
 }
 
 @media (max-width: 350px){

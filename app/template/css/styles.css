@@ -5049,6 +5049,12 @@ div.pagination {
 .accordion .card {
   margin: 1rem 0; }
 
+.accordion .collapse-text {
+  flex-grow: 1; }
+
+.accordion .collapse-pic {
+  padding-left: 2rem; }
+
 .accordion .btn {
   background-color: #30797a;
   background-image: linear-gradient(to right, #30797a, #8bb2ba);
@@ -5335,7 +5341,9 @@ aside .filter-block {
     padding-top: 4rem;
     text-align: center; }
     .slogan .num {
-      font-size: 9rem; } }
+      font-size: 9rem; }
+  .inner .header {
+    padding-bottom: 4rem; } }
 
 @media (max-width: 350px) {
   .slogan {
@@ -5496,7 +5504,14 @@ aside .filter-block {
   .licensies {
     margin-bottom: 0; }
     .licensies a {
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; }
+  .accordion .collapse-pic {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 0; }
+    .accordion .collapse-pic a {
+      display: inline-block; } }
 
 @media (max-width: 650px) {
   .catline {
@@ -5528,7 +5543,9 @@ aside .filter-block {
   .item-news__text {
     margin-top: 1rem; }
   .homepage .projects__list {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+  .accordion .btn {
+    font-size: 1.6rem; } }
 
 @media (max-width: 450px) {
   .inner .history .slick-slider {

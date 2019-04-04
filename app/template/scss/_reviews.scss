@@ -2,6 +2,12 @@
 	.card{
 		margin: 1rem 0;
 	}
+	.collapse-text{
+		flex-grow: 1;
+	}
+	.collapse-pic{
+		padding-left: 2rem;
+	}
 	.btn{
 		background-color: $color4;
 		background-image: linear-gradient(to right, $color4, #8bb2ba);
@@ -16,6 +22,7 @@
 		text-align: left;
 		width: 100%;
 		text-transform: uppercase;
+
 
 		&.collapsed{
 			background-color: #848484;
