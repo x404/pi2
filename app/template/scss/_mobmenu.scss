@@ -1,5 +1,5 @@
 $color_1: #fff; 
-$color_2: #0563bf;
+$color_2: #30797a;
 
 
 /* =mobile-menu
@@ -71,6 +71,34 @@ $color_2: #0563bf;
 				border-bottom: none !important;
 			}
 		}
+		.show-sm{
+			@include font-size(1.5);
+			padding-left: 3rem;
+			a{
+				color: $color2;
+				display: block;
+				margin: 1.8rem 0;
+				text-decoration: none;
+				border-bottom: none !important;
+				&:hover{
+					text-decoration: underline;
+				}
+			}	
+		}
+
+
+		.mobinfo{
+			padding-left: 1rem;
+			a{
+				color: $color_1;
+				display: block;
+				margin: 1.8rem;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
 	}	
 
 	.show-sm{
@@ -111,33 +139,6 @@ $color_2: #0563bf;
 			display: block;
 		}
 
-		.mobinfo{
-			padding-left: 1rem;
-			a{
-				color: $color_1;
-				display: block;
-				margin: 1.8rem;
-				text-decoration: none;
-				&:hover{
-					text-decoration: underline;
-				}
-			}
-		}
-
-		.show-sm{
-			@include font-size(1.5);
-			padding-left: 3rem;
-			a{
-				color: $color2;
-				display: block;
-				margin: 1.8rem 0;
-				text-decoration: none;
-				border-bottom: none !important;
-				&:hover{
-					text-decoration: underline;
-				}
-			}
-		}
 	}
 
 	.close-menu{
@@ -181,6 +182,7 @@ $color_2: #0563bf;
 			background: none;
 			display: block;
 			font-size: 15px;
+			left: 0;
 			margin-top: 0;
 			padding-left: 15px;
 			padding-right: 15px;

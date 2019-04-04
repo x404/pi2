@@ -3869,12 +3869,12 @@ h3 {
     .footer .lastprojects__item:nth-child(3n) {
       margin-right: 0; }
   .footer .social a {
+    align-items: center;
     border-radius: 50%;
     border: 1px solid #ababab;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 3.8rem;
+    justify-content: center;
     width: 3.8rem; }
     .footer .social a img {
       filter: grayscale(1) brightness(1.2);
@@ -3884,7 +3884,8 @@ h3 {
       .footer .social a:hover img {
         filter: none; }
   .footer .social li {
-    margin-right: .6rem; }
+    margin-right: .6rem;
+    margin-bottom: .8rem; }
     .footer .social li:last-child {
       margin-right: 0; }
   .footer .copyright,
@@ -4329,11 +4330,32 @@ h3 {
     padding: 7px 0 0; }
     .mainnav li span {
       border-bottom: none !important; }
+    .mainnav .show-sm {
+      font-size: 15px;
+      font-size: 1.5rem;
+      padding-left: 3rem; }
+      .mainnav .show-sm a {
+        color: #fff;
+        display: block;
+        margin: 1.8rem 0;
+        text-decoration: none;
+        border-bottom: none !important; }
+        .mainnav .show-sm a:hover {
+          text-decoration: underline; }
+    .mainnav .mobinfo {
+      padding-left: 1rem; }
+      .mainnav .mobinfo a {
+        color: #fff;
+        display: block;
+        margin: 1.8rem;
+        text-decoration: none; }
+        .mainnav .mobinfo a:hover {
+          text-decoration: underline; }
   .show-sm {
     display: block;
     text-align: left; }
   .navbar-toggle {
-    background-color: #0563bf;
+    background-color: #30797a;
     border: none;
     cursor: pointer;
     display: block;
@@ -4351,36 +4373,15 @@ h3 {
       margin: 8px auto;
       width: 30px; }
   .o-menu .navmenu {
-    background: #0563bf;
+    background: #30797a;
     z-index: 500;
     right: 0; }
   .o-menu .close-menu {
     display: block; }
-  .o-menu .mobinfo {
-    padding-left: 1rem; }
-    .o-menu .mobinfo a {
-      color: #fff;
-      display: block;
-      margin: 1.8rem;
-      text-decoration: none; }
-      .o-menu .mobinfo a:hover {
-        text-decoration: underline; }
-  .o-menu .show-sm {
-    font-size: 15px;
-    font-size: 1.5rem;
-    padding-left: 3rem; }
-    .o-menu .show-sm a {
-      color: #fff;
-      display: block;
-      margin: 1.8rem 0;
-      text-decoration: none;
-      border-bottom: none !important; }
-      .o-menu .show-sm a:hover {
-        text-decoration: underline; }
   .close-menu {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    background-color: #0563bf;
+    background-color: #30797a;
     background: none;
     border: none;
     cursor: pointer;
@@ -4398,7 +4399,7 @@ h3 {
     .close-menu:hover img {
       transform: rotate(90deg); }
   #navbar {
-    background-color: #0563bf; }
+    background-color: #30797a; }
     #navbar a {
       border-bottom: none !important;
       font-size: 18px;
@@ -4411,6 +4412,7 @@ h3 {
       background: none;
       display: block;
       font-size: 15px;
+      left: 0;
       margin-top: 0;
       padding-left: 15px;
       padding-right: 15px;
@@ -5141,11 +5143,32 @@ aside .filter-block {
     padding: 7px 0 0; }
     .mainnav li span {
       border-bottom: none !important; }
+    .mainnav .show-sm {
+      font-size: 15px;
+      font-size: 1.5rem;
+      padding-left: 3rem; }
+      .mainnav .show-sm a {
+        color: #fff;
+        display: block;
+        margin: 1.8rem 0;
+        text-decoration: none;
+        border-bottom: none !important; }
+        .mainnav .show-sm a:hover {
+          text-decoration: underline; }
+    .mainnav .mobinfo {
+      padding-left: 1rem; }
+      .mainnav .mobinfo a {
+        color: #fff;
+        display: block;
+        margin: 1.8rem;
+        text-decoration: none; }
+        .mainnav .mobinfo a:hover {
+          text-decoration: underline; }
   .show-sm {
     display: block;
     text-align: left; }
   .navbar-toggle {
-    background-color: #0563bf;
+    background-color: #30797a;
     border: none;
     cursor: pointer;
     display: block;
@@ -5163,36 +5186,15 @@ aside .filter-block {
       margin: 8px auto;
       width: 30px; }
   .o-menu .navmenu {
-    background: #0563bf;
+    background: #30797a;
     z-index: 500;
     right: 0; }
   .o-menu .close-menu {
     display: block; }
-  .o-menu .mobinfo {
-    padding-left: 1rem; }
-    .o-menu .mobinfo a {
-      color: #fff;
-      display: block;
-      margin: 1.8rem;
-      text-decoration: none; }
-      .o-menu .mobinfo a:hover {
-        text-decoration: underline; }
-  .o-menu .show-sm {
-    font-size: 15px;
-    font-size: 1.5rem;
-    padding-left: 3rem; }
-    .o-menu .show-sm a {
-      color: #fff;
-      display: block;
-      margin: 1.8rem 0;
-      text-decoration: none;
-      border-bottom: none !important; }
-      .o-menu .show-sm a:hover {
-        text-decoration: underline; }
   .close-menu {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    background-color: #0563bf;
+    background-color: #30797a;
     background: none;
     border: none;
     cursor: pointer;
@@ -5210,7 +5212,7 @@ aside .filter-block {
     .close-menu:hover img {
       transform: rotate(90deg); }
   #navbar {
-    background-color: #0563bf; }
+    background-color: #30797a; }
     #navbar a {
       border-bottom: none !important;
       font-size: 18px;
@@ -5223,6 +5225,7 @@ aside .filter-block {
       background: none;
       display: block;
       font-size: 15px;
+      left: 0;
       margin-top: 0;
       padding-left: 15px;
       padding-right: 15px;
@@ -5265,6 +5268,18 @@ aside .filter-block {
   .slogan {
     padding-left: 400px; } }
 
+@media (max-width: 991px) {
+  .footer__menu {
+    margin-bottom: 1.5rem; }
+    .footer__menu .column {
+      margin-right: 0; }
+      .footer__menu .column:last-child {
+        margin-right: 0; }
+  .footer .copyright {
+    margin-top: 1.5rem; }
+  .footer .creators {
+    margin-top: 2rem; } }
+
 @media (max-width: 980px) {
   .slogan {
     padding-left: 220px; } }
@@ -5278,6 +5293,18 @@ aside .filter-block {
     padding-left: 34%; }
     .slogan .num {
       font-size: 11rem; } }
+
+@media (max-width: 575px) {
+  .footer {
+    text-align: center; }
+    .footer__menu .column {
+      margin-bottom: 2.5rem; }
+    .footer .lastprojects {
+      justify-content: center; }
+    .footer .social {
+      margin-top: 1rem; }
+      .footer .social ul {
+        justify-content: center; } }
 
 @media (max-width: 550px) {
   .logo {
@@ -5338,7 +5365,11 @@ aside .filter-block {
   #modal-projects,
   #modal-bim {
     transform: translateX(-50%);
-    margin-left: 0; } }
+    margin-left: 0; }
+  .footer .lastprojects__item {
+    margin-right: 1.5rem !important; }
+    .footer .lastprojects__item:nth-child(2n) {
+      margin-right: 0; } }
 
 @media (max-width: 991px) {
   .homepage .about {

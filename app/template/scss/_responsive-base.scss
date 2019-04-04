@@ -8,6 +8,28 @@
 	.slogan{
 		padding-left: 400px;
 	}
+
+}
+
+
+@media (max-width: 991px){
+	.footer{
+		&__menu{
+			margin-bottom: 1.5rem;
+			.column{
+				margin-right: 0;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+		.copyright{
+			margin-top: 1.5rem;
+		}
+		.creators{
+			margin-top: 2rem;
+		}
+	}
 }
 
 
@@ -31,6 +53,30 @@
 		}
 	}
 }
+
+@media (max-width: 575px){
+	.footer{
+		text-align: center;
+		&__menu{
+			// text-align: center;
+			.column{
+				margin-bottom: 2.5rem;
+			}
+		}
+
+		.lastprojects{
+			justify-content: center;
+		}
+		
+		.social{
+			margin-top: 1rem;
+			ul{
+				justify-content: center;
+			}
+		}
+	}
+}
+
 
 @media (max-width: 550px){
 	.logo{

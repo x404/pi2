@@ -82,8 +82,6 @@ $(document).ready(function(){
 		]
 	});
 
-
-
 	$('#history-carousel').slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
@@ -151,7 +149,6 @@ $(document).ready(function(){
 			}
 		]
 	});
-
 
 	$('#modal-history-carousel').slick({
 		slidesToShow: 5,
@@ -432,3 +429,13 @@ class Popup{
 		})
 })
 
+
+
+// показываем второй  уровень меню
+// $(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(e){
+// 	e.preventDefault();
+// 	var $this = $(this);
+// 	$this.next('.subnav').slideToggle('normal', function(){
+// 		$this.toggleClass('open')
+// 	});
+// })
