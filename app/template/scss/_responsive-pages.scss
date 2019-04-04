@@ -73,6 +73,14 @@
 
 
 
+@media (max-width: 1080px){
+	.project__title{
+		font-size: 2.2rem;
+		overflow: hidden;
+	}
+}
+
+
 @media (max-width: 991px){
 	.homepage{
 		.about{

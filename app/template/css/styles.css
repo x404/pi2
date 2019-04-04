@@ -5371,6 +5371,11 @@ aside .filter-block {
     .footer .lastprojects__item:nth-child(2n) {
       margin-right: 0; } }
 
+@media (max-width: 1080px) {
+  .project__title {
+    font-size: 2.2rem;
+    overflow: hidden; } }
+
 @media (max-width: 991px) {
   .homepage .about {
     background: none !important;
