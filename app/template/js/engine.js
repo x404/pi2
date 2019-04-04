@@ -388,7 +388,23 @@ class Popup{
 		// show overlay
 		document.querySelector('.transparent-overlay').addEventListener('click', function(){
 			modal.close();
-		})
+		});
+
+		// GENERAL EVENT - ONKEYDOWN
+		document.onkeydown = function(evt) {
+		    evt = evt || window.event;
+		    var isEscape = false;
+		    if ("key" in evt) {
+		        isEscape = (evt.key == "Escape" || evt.key == "Esc");
+		    } else {
+		        isEscape = (evt.keyCode == 27);
+		    }
+		    if (isEscape) {
+		    	modal.close();
+		    }
+		};
+
+
 		// show popup
 		document.querySelector(this.name).classList.add('show');
 	}
