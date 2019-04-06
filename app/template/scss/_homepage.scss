@@ -485,7 +485,7 @@
 		color: $color7;
 		display: inline-block;
 		&:hover{
-			border-bottom: rgba(255,255,255,0);
+			border-bottom-color: rgba(255,255,255,0);
 			color: $color7;
 			text-decoration: none;
 		}

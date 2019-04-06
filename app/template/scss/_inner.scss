@@ -3,26 +3,63 @@ main{
 	padding-bottom: 3rem;
 	color: $color6;
 
-	h2{
-		font-size: 1.8rem;
-		font-weight: normal;
+	
+	h1, h2, h3, h4, h5, h6{
+		color: #666;
+		line-height: 1.2;
+	}
+	
+	h1{
+		margin-bottom: 2rem;
+	}
+
+	h2, h3, h4, h5, h6{
+		margin-bottom: .2rem;
 		& + p{
-			margin-top: 1rem;
+			margin-top: .2rem;
 		}
 	}
+
+	h2{
+		// font-size: 1.8rem;
+		font-size: 2.8rem;
+		// font-weight: normal;
+	}
+
 	h3{
-		margin: 2rem 0;
+		font-size: 2.6rem;
+		margin: 1rem 0;
+	}
+
+
+	h4{
+		font-size: 2.4rem;
+	}
+
+
+	h5{
+		font-size: 2.2rem;
+	}
+
+	h6{
+		font-size: 2rem;
 	}
 
 	p{
 		line-height: 1.8;
-		margin: 3rem 0 
+		// margin: 3rem 0 ;
+		margin: .5rem 0 ;
 	}
 
 	a{
 		color: $color4;
 		&:hover{color: $color4;}
 		@extend .tdu;
+	}
+
+	.uppercase{
+		font-size: 1.8rem;
+		margin-bottom: 0;
 	}
 
 
@@ -42,6 +79,10 @@ main{
 
 		a{
 			color: $color4;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -86,6 +127,7 @@ main{
 		counter-reset: li;  
 		list-style: none;
 		li{
+			margin: 1rem 0;
 			padding-left: 20px;
 			position: relative;
 			&:before{
@@ -104,7 +146,7 @@ main{
 	.gallery{
 		img{
 			display: block;
-			max-width: 100%;
+			width: 100%;
 			height: auto;
 		}
 		a{

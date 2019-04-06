@@ -60,6 +60,27 @@ $color_2: #30797a;
 			font-weight: normal;
 		}
 
+		.subnav{
+			margin-top: 0;
+			position: static;
+			transform: none !important;
+			ul{
+				display: block;
+				margin-bottom: 1rem;
+				li{
+					border-bottom: none !important;
+					&.active{
+						a, span{
+							text-decoration: underline !important;
+						}
+					}
+					a{
+						padding: 7px 0 7px 18px !important;
+					}
+				}
+			}
+		}
+
 	}
 
 	.mainnav{
@@ -85,7 +106,6 @@ $color_2: #30797a;
 				}
 			}	
 		}
-
 
 		.mobinfo{
 			padding-left: 1rem;
@@ -127,7 +147,6 @@ $color_2: #30797a;
 	}
 
 
-
 	.o-menu{
 		.navmenu{
 			background: $color_2;
@@ -138,7 +157,6 @@ $color_2: #30797a;
 		.close-menu{
 			display: block;
 		}
-
 	}
 
 	.close-menu{

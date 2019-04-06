@@ -393,7 +393,7 @@ class Popup{
 		// GENERAL EVENT - ONKEYDOWN
 		document.onkeydown = function(evt) {
 		    evt = evt || window.event;
-		    var isEscape = false;
+		    let isEscape = false;
 		    if ("key" in evt) {
 		        isEscape = (evt.key == "Escape" || evt.key == "Esc");
 		    } else {
@@ -403,8 +403,6 @@ class Popup{
 		    	modal.close();
 		    }
 		};
-
-
 		// show popup
 		document.querySelector(this.name).classList.add('show');
 	}

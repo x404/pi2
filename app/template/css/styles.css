@@ -3749,8 +3749,8 @@ h3 {
         color: #000;
         border-bottom: 1px solid rgba(255, 255, 255, 0); }
         .navmenu .nav > li a:hover {
-          text-decoration: none;
-          border-bottom-color: #30797a; }
+          border-bottom-color: #30797a;
+          text-decoration: none; }
   .navmenu .subnav {
     margin-top: 2.5rem;
     position: absolute; }
@@ -4274,7 +4274,7 @@ h3 {
   color: #808080;
   display: inline-block; }
   .item-news__link:hover {
-    border-bottom: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
     color: #808080;
     text-decoration: none; }
 
@@ -4325,6 +4325,19 @@ h3 {
     .navmenu a,
     .navmenu span {
       font-weight: normal; }
+    .navmenu .subnav {
+      margin-top: 0;
+      position: static;
+      transform: none !important; }
+      .navmenu .subnav ul {
+        display: block;
+        margin-bottom: 1rem; }
+        .navmenu .subnav ul li {
+          border-bottom: none !important; }
+          .navmenu .subnav ul li.active a, .navmenu .subnav ul li.active span {
+            text-decoration: underline !important; }
+          .navmenu .subnav ul li a {
+            padding: 7px 0 7px 18px !important; }
   .mainnav {
     margin-left: 0;
     overflow: hidden;
@@ -4725,20 +4738,36 @@ tbody.collapse.show {
 main {
   padding-bottom: 3rem;
   color: #4a4a4a; }
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: #666;
+    line-height: 1.2; }
+  main h1 {
+    margin-bottom: 2rem; }
+  main h2, main h3, main h4, main h5, main h6 {
+    margin-bottom: .2rem; }
+    main h2 + p, main h3 + p, main h4 + p, main h5 + p, main h6 + p {
+      margin-top: .2rem; }
   main h2 {
-    font-size: 1.8rem;
-    font-weight: normal; }
-    main h2 + p {
-      margin-top: 1rem; }
+    font-size: 2.8rem; }
   main h3 {
-    margin: 2rem 0; }
+    font-size: 2.6rem;
+    margin: 1rem 0; }
+  main h4 {
+    font-size: 2.4rem; }
+  main h5 {
+    font-size: 2.2rem; }
+  main h6 {
+    font-size: 2rem; }
   main p {
     line-height: 1.8;
-    margin: 3rem 0; }
+    margin: .5rem 0; }
   main a {
     color: #30797a; }
     main a:hover {
       color: #30797a; }
+  main .uppercase {
+    font-size: 1.8rem;
+    margin-bottom: 0; }
   main table {
     margin-top: 1.5rem;
     font-size: 1.4rem; }
@@ -4750,7 +4779,10 @@ main {
       border: 1px solid #ccc;
       padding: 1rem 2.5rem; }
     main table a {
-      color: #30797a; }
+      color: #30797a;
+      text-decoration: none; }
+      main table a:hover {
+        text-decoration: underline; }
   main .table {
     margin-top: 1.5rem; }
     main .table th {
@@ -4779,6 +4811,7 @@ main {
     counter-reset: li;
     list-style: none; }
     main ol li {
+      margin: 1rem 0;
       padding-left: 20px;
       position: relative; }
       main ol li:before {
@@ -4792,7 +4825,7 @@ main {
         width: 20px; }
   main .gallery img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto; }
   main .gallery a {
     margin-bottom: 2rem;
@@ -5169,6 +5202,19 @@ aside .filter-block {
     .navmenu a,
     .navmenu span {
       font-weight: normal; }
+    .navmenu .subnav {
+      margin-top: 0;
+      position: static;
+      transform: none !important; }
+      .navmenu .subnav ul {
+        display: block;
+        margin-bottom: 1rem; }
+        .navmenu .subnav ul li {
+          border-bottom: none !important; }
+          .navmenu .subnav ul li.active a, .navmenu .subnav ul li.active span {
+            text-decoration: underline !important; }
+          .navmenu .subnav ul li a {
+            padding: 7px 0 7px 18px !important; }
   .mainnav {
     margin-left: 0;
     overflow: hidden;
@@ -5386,6 +5432,8 @@ aside .filter-block {
 @media (max-width: 1450px) {
   .homepage {
     background-position: -250px 80px; }
+    .homepage .history {
+      background-position: -180px 40px; }
   .linkbox {
     background-position: right -250px top; }
   .lastnews {

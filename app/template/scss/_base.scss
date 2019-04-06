@@ -253,9 +253,8 @@ em strong
 				color: $color1;
 				border-bottom: 1px solid rgba(255,255,255,0);
 				&:hover{
-					text-decoration: none;
 					border-bottom-color: $color4;
-					// text-decoration-color: $color4;
+					text-decoration: none;
 				}
 			}
 		}

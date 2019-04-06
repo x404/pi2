@@ -22,6 +22,7 @@ var gulp 		= require('gulp'),
 var config = {
 	templateDir : 'app/template',
 	destDir : 'dist',
+	templateDestDir : 'dist/template',
 	libsDir : 'app/libs'
 };
 
@@ -58,7 +59,6 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/modernizr-custom-webp.js',
 				config.templateDir + '/js/modernizr.js',
 				config.libsDir + '/jquery/dist/jquery.js',
-				// config.libsDir + '/jquery-validation/dist/jquery.validate.js',
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/collapse.js',
 				config.templateDir + '/js/popper.min.js',
@@ -80,9 +80,9 @@ gulp.task('clean', function() {
 // отслеживаем изменения
 // в квадратных скобках перечисляются таски, которые должны выполниться до watcher (до запуска сервера)
 gulp.task('watcher', ['browser-sync', 'css-libs', 'compress'], function(){
-	return gulp.watch('app/template/scss/**/*.scss', ['scss', 'css-libs']), // при изменении любого *scss-файла вызываем таск scss
+	return gulp.watch(config.templateDir + '/scss/**/*.scss', ['scss', 'css-libs']), // при изменении любого *scss-файла вызываем таск scss
 		gulp.watch('app/*.html', browserSync.reload),
-		gulp.watch('app/template/js/**/*.js', browserSync.reload)
+		gulp.watch(config.templateDir + '/js/**/*.js', browserSync.reload)
 });
 
 
@@ -116,14 +116,14 @@ gulp.task('sprite-create', ['sprite-clean'], function () {
 
 
 gulp.task('img', function() {
-    return gulp.src('app/template/images/**/*') // Берем все изображения из app
+    return gulp.src(config.templateDir + '/images/**/*') // Берем все изображения из app
         .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         })))
-        .pipe(gulp.dest('dist/template/images')); // Выгружаем на продакшен
+        .pipe(gulp.dest(config.templateDestDir + '/images')); // Выгружаем на продакшен
 });
 
 
@@ -220,25 +220,34 @@ gulp.task('check-for-favicon-update', function(done) {
 gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	// переносим css файлы
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
+		config.templateDir + '/css/styles.css',
 		config.templateDir + '/css/styles.min.css',
-		config.templateDir + '/css/tiny.css',
-		config.templateDir + '/css/animation.css',
-		config.templateDir + '/css/jquery.fancybox.min.css'
+		config.templateDir + '/css/jquery.fancybox.min.css',
+		config.templateDir + '/css/tiny.css'
 	])
-	.pipe(gulp.dest(config.destDir + '/template/css'));
+	.pipe(gulp.dest(config.templateDestDir + '/css'));
 
-	var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
+
+	var buildJs = gulp.src([ // move js to production
+		config.templateDir + '/js/libs.min.js',
+		config.templateDir + '/js/slick.min.js',
+		config.templateDir + '/js/engine.js'
+	])
+	.pipe(gulp.dest(config.templateDestDir + '/js'));
+
+
+
+
+	// var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
+
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
-	var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/template/js'));
-	var buildTmp = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
-	var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest(config.destDir + '/tmp'));
-	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.destDir + '/template/fonts')); // Переносим шрифты в продакшен
+	var buildProjectTmpImages = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
+	// var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest(config.destDir + '/tmp'));
+	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.templateDestDir + '/fonts')); // Переносим шрифты в продакшен
 	var buildOutdate = gulp.src('app/outdatedbrowser/**/*').pipe(gulp.dest(config.destDir + '/outdatedbrowser'));
-
 });
-
 
 
 gulp.task('clear', function () {
@@ -248,9 +257,9 @@ gulp.task('clear', function () {
 gulp.task('default', ['watcher']);
 
 
-
 // var config = {
 // 	templateDir : 'app/template',
 // 	destDir : 'dist',
+// 	templateDestDir : 'dist/template',
 // 	libsDir : 'app/libs'
 // };

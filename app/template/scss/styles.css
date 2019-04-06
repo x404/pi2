@@ -4342,8 +4342,8 @@ h3 {
         color: #000;
         border-bottom: 1px solid rgba(255, 255, 255, 0); }
         .navmenu .nav > li a:hover {
-          text-decoration: none;
-          border-bottom-color: #30797a; }
+          border-bottom-color: #30797a;
+          text-decoration: none; }
   .navmenu .subnav {
     margin-top: 2.5rem;
     position: absolute; }
@@ -4771,6 +4771,7 @@ h3 {
   .activity h1 {
     margin-bottom: 4rem; }
   .activity__link {
+    background-color: #fff;
     border: 1px solid #30797a;
     color: #4a4a4a;
     display: block;
@@ -4846,7 +4847,7 @@ h3 {
   color: #808080;
   display: inline-block; }
   .item-news__link:hover {
-    border-bottom: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
     color: #808080;
     text-decoration: none; }
 
@@ -4897,6 +4898,16 @@ h3 {
     .navmenu a,
     .navmenu span {
       font-weight: normal; }
+    .navmenu .subnav {
+      margin-top: 0;
+      position: static;
+      transform: none !important; }
+      .navmenu .subnav ul {
+        display: block; }
+        .navmenu .subnav ul li {
+          border-bottom: none !important; }
+          .navmenu .subnav ul li a {
+            padding: 10px 0 10px 25px !important; }
 
   .mainnav {
     margin-left: 0;
@@ -5364,6 +5375,13 @@ main {
         position: absolute;
         top: 0;
         width: 20px; }
+  main .gallery img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  main .gallery a {
+    margin-bottom: 2rem;
+    display: block; }
 
 .main #map {
   height: 32rem; }
@@ -5453,6 +5471,8 @@ a[data-fancybox] {
     left: -33px; }
   #single-carousel .slick-next {
     right: -33px; }
+  #single-carousel .slick-slide img {
+    width: 100%; }
 
 #single-carousel ~ .project__about {
   margin-top: -3.5rem; }
@@ -5497,21 +5517,27 @@ a[data-fancybox] {
   .content-aside .content {
     padding-bottom: 0; }
 
-aside .submenu {
+aside div.submenu {
   background-color: #30797a;
   color: #fff;
   padding: 1rem; }
-  aside .submenu li {
+  aside div.submenu li {
     margin: .3rem 0; }
-  aside .submenu a {
+  aside div.submenu a {
     color: #fff;
     display: block;
     padding: .2rem .7rem; }
-  aside .submenu .active a,
-  aside .submenu a:hover {
+  aside div.submenu .active a,
+  aside div.submenu a:hover {
     background-color: #fff;
     color: #000;
     text-decoration: none; }
+aside select.submenu {
+  margin: 0 auto 3rem;
+  width: 250px;
+  display: block;
+  height: 3rem;
+  font-size: 1.6rem; }
 
 div.pagination {
   display: flex;
@@ -5717,6 +5743,16 @@ aside .filter-block {
     .navmenu a,
     .navmenu span {
       font-weight: normal; }
+    .navmenu .subnav {
+      margin-top: 0;
+      position: static;
+      transform: none !important; }
+      .navmenu .subnav ul {
+        display: block; }
+        .navmenu .subnav ul li {
+          border-bottom: none !important; }
+          .navmenu .subnav ul li a {
+            padding: 10px 0 10px 25px !important; }
 
   .mainnav {
     margin-left: 0;
@@ -5877,6 +5913,9 @@ aside .filter-block {
   .header {
     padding-bottom: 0; }
 
+  .inner .header {
+    padding-bottom: 3rem; }
+
   .slogan {
     font-size: 3.2rem;
     padding-top: 7rem;
@@ -5884,6 +5923,9 @@ aside .filter-block {
     .slogan .num {
       font-size: 11rem; } }
 @media (max-width: 575px) {
+  .main-grid {
+    display: block !important; }
+
   .footer {
     text-align: center; }
     .footer__menu .column {
@@ -5909,7 +5951,7 @@ aside .filter-block {
       font-size: 9rem; }
 
   .inner .header {
-    padding-bottom: 1rem; } }
+    padding-bottom: 4rem; } }
 @media (max-width: 350px) {
   .slogan {
     font-size: 2.2rem;
@@ -5931,6 +5973,8 @@ aside .filter-block {
 @media (max-width: 1450px) {
   .homepage {
     background-position: -250px 80px; }
+    .homepage .history {
+      background-position: -180px 40px; }
 
   .linkbox {
     background-position: right -250px top; }
@@ -6015,7 +6059,16 @@ aside .filter-block {
   .history .cd-date {
     left: 116%; }
   .history .slick-slider {
-    width: 240px; } }
+    width: 240px; }
+
+  .activity__plate {
+    margin: 3rem; }
+
+  main .gallery a {
+    width: 32%; }
+
+  .inner .main h1 {
+    text-align: center; } }
 @media (max-width: 990px) {
   .history .cd-timeline-content {
     width: 100%; }
@@ -6062,7 +6115,9 @@ aside .filter-block {
     margin-top: 6rem;
     text-align: center; }
 
-  header h1 {
+  header h1,
+  main h1,
+  .main h1 {
     text-align: center; }
 
   .homepage .activity__menu {
@@ -6091,7 +6146,28 @@ aside .filter-block {
     text-align: center;
     padding-left: 0; }
     .accordion .collapse-pic a {
-      display: inline-block; } }
+      display: inline-block; }
+
+  .inner .news__list .item-news__desc {
+    margin-left: 0;
+    margin-top: 2rem; }
+  .inner .pagination {
+    padding-left: 0;
+    justify-content: center; }
+
+  #single-carousel .slick-slide img {
+    height: auto;
+    display: block;
+    width: 100%; }
+
+  .project__area {
+    padding-left: 0;
+    padding-top: 1rem; }
+
+  .page-error .text-error {
+    font-size: 2.6rem; }
+  .page-error .code {
+    font-size: 10rem; } }
 @media (max-width: 650px) {
   .catline {
     display: none !important; } }
@@ -6099,7 +6175,12 @@ aside .filter-block {
   .inner .history .cd-timeline-content {
     width: 85%; }
   .inner .history .slick-slider {
-    width: 280px; } }
+    width: 280px; }
+
+  .page-error .main {
+    padding-bottom: 0; }
+  .page-error main {
+    padding-bottom: 1rem; } }
 @media (max-width: 550px) {
   .about,
   .activity,
