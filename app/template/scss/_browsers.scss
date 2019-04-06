@@ -17,4 +17,13 @@ _::-webkit-full-page-media, _:future, :root .selector {
 
 //ie11
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.inner{
+		.activity__menu{
+			justify-content: flex-start !important;
+		}
+		.activity__plate{
+			margin-right: 3rem;
+			margin-bottom: 3rem;
+		}
+	}
 }

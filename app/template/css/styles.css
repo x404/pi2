@@ -5341,6 +5341,13 @@ aside .filter-block {
 ::-ms-clear {
   display: none; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .inner .activity__menu {
+    justify-content: flex-start !important; }
+  .inner .activity__plate {
+    margin-right: 3rem;
+    margin-bottom: 3rem; } }
+
 @media (max-width: 1550px) {
   .navmenu .subnav {
     left: 50%;
