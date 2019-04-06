@@ -57,9 +57,13 @@ main{
 		@extend .tdu;
 	}
 
+	strong, b{
+		font-weight: bold;
+	}
 	.uppercase{
 		font-size: 1.8rem;
 		margin-bottom: 0;
+		text-transform: uppercase;
 	}
 
 
@@ -225,7 +229,7 @@ main{
 
 
 .licensies{
-	margin-bottom: 5rem;
+	margin: 2rem 0 5rem;
 	a{
 		max-width: 270px;
 		display: block;

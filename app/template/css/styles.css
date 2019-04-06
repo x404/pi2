@@ -4765,9 +4765,12 @@ main {
     color: #30797a; }
     main a:hover {
       color: #30797a; }
+  main strong, main b {
+    font-weight: bold; }
   main .uppercase {
     font-size: 1.8rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-transform: uppercase; }
   main table {
     margin-top: 1.5rem;
     font-size: 1.4rem; }
@@ -4872,7 +4875,7 @@ main {
   padding-bottom: 11rem; }
 
 .licensies {
-  margin-bottom: 5rem; }
+  margin: 2rem 0 5rem; }
   .licensies a {
     max-width: 270px;
     display: block; }
