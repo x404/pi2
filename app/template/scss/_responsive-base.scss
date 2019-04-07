@@ -3,7 +3,7 @@
 		left: 50%;
 		transform: translateX(-45%);
 		ul{
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
 		}
 		a{
 			white-space: nowrap;
@@ -59,7 +59,7 @@
 	}
 
 	.inner .header{
-		padding-bottom: 3rem;
+		padding-bottom: 8rem;
 	}
 
 	.slogan{
@@ -69,6 +69,14 @@
 		.num{
 			font-size: 11rem;
 		}
+	}
+
+	.main-grid{
+		display: block !important;
+	}
+
+	.navmenu .subnav{
+		// position: static;
 	}
 }
 

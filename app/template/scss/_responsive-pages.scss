@@ -5,6 +5,14 @@
 }
 
 
+@media (max-width: 1480px){
+	.navmenu .subnav ul li{
+		margin-right: 1.4rem;
+		padding-right: 1.4rem;
+	}
+}
+
+
 @media (max-width: 1450px){
 	.homepage{
 		background-position: -250px 80px;
@@ -359,10 +367,6 @@
 	}
 }
 
-@media (max-width: 576px){
-}
-
-
 @media (max-width: 570px){
 	.inner .history{
 		.cd-timeline-content{
@@ -441,7 +445,13 @@
 			width: 180px;
 		}
 		.cd-timeline-content{
-			width: 250px;
+			width: 290px;
+		}
+	}
+
+	main{
+		h1, h2, h3, h4, h5, h6{
+			text-align: center;
 		}
 	}
 }
