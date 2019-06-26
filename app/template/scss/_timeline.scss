@@ -29,6 +29,9 @@
 			flex-direction: column;
 			min-height: 70px;
 			justify-content: center;
+			&.cd-date{
+				min-height: 0 
+			}
 		}
 		p{
 			margin-top: 0;
@@ -37,7 +40,7 @@
 			color: #35495c;
 			float: left;
 			font-size: 14px;
-			padding-top: 4px;
+			padding-top: 4px; 
 		}
 
 		.cd-title{
@@ -129,6 +132,7 @@
 			width: 43%;
 			// padding-top: 10px;
 			.cd-date {
+				// min-height: 0;
 				position: absolute;
 				width: 100%;
 				left: 133%;

@@ -21,6 +21,7 @@ var gulp 		= require('gulp'),
 
 var config = {
 	templateDir : 'app/template',
+	templateDirModx: '../www/template',
 	destDir : 'dist',
 	templateDestDir : 'dist/template',
 	libsDir : 'app/libs'
@@ -31,16 +32,16 @@ var config = {
 gulp.task('scss', function(){
 	return gulp.src(config.templateDir + '/scss/**/*.scss') // Берем источник
 		.pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
-		.pipe(gulp.dest(config.templateDir + '/css'))  // Выгружаем результата в папку app/css
+		.pipe(gulp.dest(config.templateDirModx + '/css'))  // Выгружаем результата в папку app/css
 });
 
 
 // сжатие css файла
 gulp.task('css-libs', ['scss'],  function(){
-	return gulp.src(config.templateDir + '/css/styles.css') // Выбираем файл для минификации
+	return gulp.src(config.templateDirModx + '/css/styles.css') // Выбираем файл для минификации
 		.pipe(cleancss())  // Сжимаем
 		.pipe(rename({suffix: '.min'}))  // Добавляем суффикс .min
-		.pipe(gulp.dest(config.templateDir + '/css')) // Выгружаем в папку app/css
+		.pipe(gulp.dest(config.templateDirModx + '/css')) // Выгружаем в папку app/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 })
 

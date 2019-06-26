@@ -74,7 +74,8 @@ $color_2: #30797a;
 							text-decoration: underline !important;
 						}
 					}
-					a{
+					a,
+					span{
 						padding: 7px 0 7px 18px !important;
 					}
 				}
@@ -92,7 +93,7 @@ $color_2: #30797a;
 				border-bottom: none !important;
 			}
 		}
-		.show-sm{
+		.mob-contacts{
 			@include font-size(1.5);
 			padding-left: 3rem;
 			a{
@@ -156,6 +157,8 @@ $color_2: #30797a;
 
 		.close-menu{
 			display: block;
+			right: -15px;
+			top: -15px;
 		}
 	}
 
@@ -185,10 +188,12 @@ $color_2: #30797a;
 
 	#navbar{
 		background-color:$color_2;
+		a,span{
+			font-size: 18px;
+			font-weight: 400;			
+		}
 		a{
 			border-bottom: none !important;
-			font-size: 18px;
-			font-weight: 400;
 			&:hover{
 				text-decoration: none;
 			}
@@ -196,6 +201,7 @@ $color_2: #30797a;
 		.container{
 			padding: 0;
 		}
+
 		ul.nav{
 			background: none;
 			display: block;
@@ -207,7 +213,7 @@ $color_2: #30797a;
 			text-align: left;
 
 			& > li.active > a{
-				text-decoration: underline;				
+				text-decoration: underline;		
 			}
 			li{ // 1 level
 				padding: 0;
@@ -232,6 +238,7 @@ $color_2: #30797a;
 				&:hover{
 					a, span{
 						background: none;
+						// text-decoration: underline;
 					}
 					border-bottom: 1px solid #fff;
 					color: #fff;
@@ -244,7 +251,67 @@ $color_2: #30797a;
 						}
 					}
 				}
+				&.folder{
+					position: relative;
+					& > a{
+						position: relative;
+						&:after{
+							background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIlJREFUeNpi+P//vw0QBwMxAzbMxMDA4ALEa4A4iQEbAKoSB+Lt/yEgBd0EGIMXiHdAFSVjUwDCfEC8C90kdEcJQa37A8T5QCyBzeUCQHwXalIfuiQTEHdBJecBsRGyJCMQ98N0YnMDTLIfahJcAQcQ9yJJYoRDEVSyF2oNhgIfIM7FJgnCAAEGAKmlN490MQwsAAAAAElFTkSuQmCC") no-repeat right top;
+							content: "";
+							display: block;
+							height: 12px;
+							left: 250px;
+							position: absolute;
+							top: 24px;
+							transition: transform .3s;
+							width: 8px;
+						}
+						&.open
+						{
+							&:after{
+								transform: rotate(90deg)
+							}
+						}
+					}
+
+					&.active > a{
+						&:after{
+							transform: rotate(90deg)
+						}						
+					}
+
+					.subnav{
+						margin-left: 0;
+						position: static;
+						transform: translateX(0) !important;
+						// width: 100%;
+						width: 240px;
+						ul{
+							background: none;
+							margin-top: -10px;
+							opacity: 1;
+							padding: 0;
+							li{
+								border-bottom: none;
+								a,span{
+									white-space: normal;
+									padding: 7px 0 7px 10px;
+									text-transform: lowercase;
+								}
+								a{
+									&:hover{
+										text-decoration: underline;
+									}
+								}
+							}
+							&:before{
+								display: none;
+							}
+						}
+					}
+				}
 			}
+
 		}
 
 		.nav-tabs>li{

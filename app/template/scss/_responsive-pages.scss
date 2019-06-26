@@ -276,7 +276,8 @@
 	header,
 	main,
 	.main {
-		h1{
+		h1,
+		p.h1{
 			text-align: center;
 		}
 	}
@@ -356,6 +357,42 @@
 		}
 		.code{
 			font-size: 10rem;
+		}
+	}
+
+
+	.navmenu .subnav222{
+		background: $color4;
+		// display: block !important;
+		height: 100%;	
+		left: auto;	
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 300px;
+		ul{
+			li{
+				border-bottom: 1px solid #fff;
+			}
+			a{
+				color: $color2;
+			}
+
+				a, span{
+					color: $color_1;
+					display: block;
+					height: auto;
+					line-height: normal;
+					padding: 18px 0 18px 18px;
+					text-decoration: none;
+					text-transform: none;
+					&:hover{
+						color: #fff;
+					}
+					&:before{
+						display: none !important;
+					}
+				}
 		}
 	}
 }

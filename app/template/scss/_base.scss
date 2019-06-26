@@ -53,9 +53,9 @@ input::-moz-focus-inner{
 }
 
 .main-grid{
-	height: 100%;
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 	.main{
 		flex-grow: 1;
 	}		
@@ -107,7 +107,9 @@ input::-moz-focus-inner{
 /*** standart classes *****/
 p{}
 a{color: $color3; transition: .3s}
+p.h1,
 h1{
+	font-weight: bold;
 	font-size:3rem;
 	color: $color3;
 	text-transform: uppercase;
@@ -118,6 +120,9 @@ h1{
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
 
+.no-bold{
+	font-weight: normal;
+}
 
 .ucase{
 	text-transform: uppercase;
@@ -229,15 +234,24 @@ em strong
 	.nav{
 		display: flex;
 		justify-content: center;
-		left: -30px;
+		// left: -30px;
 		position: relative;
+		width: 455px;
+		margin-left: auto;
+		margin-right: auto;
 		& > li{
 			margin: 0 2.4rem;
+			.subnav{
+				display: none;
+			}
 			&.active{
+				.subnav{
+					display: block;
+				}
 				& > a, 
 				& > span{
 					cursor: default;
-					border-bottom-color: $color4;
+					border-bottom: 1px solid $color4;
 				}
 			}
 
@@ -253,14 +267,26 @@ em strong
 		}
 	}
 	.subnav{
+		// display: none !important;
 		margin-top: 2.5rem;
-		position: absolute;
+		display: flex;
+		justify-content: center;
+		// overflow: hidden;
+		// position: absolute;
+		// position: relative;
+		// left: 50%;
+		// margin-left: auto;
+		// margin-right: auto;
+		// margin-left: -225px;
+		// width: 750px;
+
 		ul{
 			display: flex;
 			li{
 				margin-right: 1.8rem;
 				padding-right: 1.8rem;
 				position: relative;
+				text-transform: lowercase;
 				&:after{
 					@extend .before;
 					border-right: 1px solid $color3;
@@ -280,7 +306,7 @@ em strong
 					}
 				}
 			}
-			a{
+			a, span{
 				color: #666;
 				border-bottom: 1px solid rgba(255,255,255,0);
 				&:hover{
@@ -372,6 +398,9 @@ em strong
 	}
 }
 
+.ucase{
+	text-transform: uppercase;
+}
 
 .footer{
 	background-color: #fff;
@@ -399,6 +428,7 @@ em strong
 
 	dd{
 		margin-bottom: .2rem;
+		// text-transform: lowercase;
 	}
 
 	&__menu{

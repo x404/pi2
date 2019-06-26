@@ -1,10 +1,10 @@
 .webp{
 	.homepage{
 		&.bg-1{
-			background-image: url(../images/bg/bg-1-1.webp);
+			background-image: url(../images/bg/homepage-bg-1-1.webp);
 		}
 		&.bg-2{
-			background-image: url(../images/bg/bg-1-2.webp);
+			background-image: url(../images/bg/homepage-bg-1-2.webp);
 		}
 		.about{
 			background-image: url(../images/bg/bg-3.webp);			
@@ -24,9 +24,35 @@
 	}
 
 	.inner{
-		background-image: url(../images/bg/inner-bg.webp);
-		&-history .main{
-			background-image: url(../images/bg/inner-bg-3.webp);
+		// background-image: url(../images/bg/inner-bg.webp);
+		&.bg-1{
+			background-image: url(../images/bg/inner-bg-1-1.webp);
+		}
+		&.bg-2{
+			background-image: url(../images/bg/inner-bg-1-2.webp);
+		}
+
+
+		&-history-1 .main{
+			background-image: url(../images/bg/inner-history-1-1.webp);
+		}
+		&-history-2 .main{
+			background-image: url(../images/bg/inner-history-1-1.webp);
+		}
+
+
+		&-bg-right{
+			// background-image: url(../images/bg/inner-bg-right.webp);
+		}
+
+		&-news,
+		&.bg-right{
+			&-1{
+				background-image: url(../images/bg/inner-bg-4-1.webp);
+			}
+			&-2{
+				background-image: url(../images/bg/inner-bg-4-2.webp);
+			}
 		}
 	}
 }
@@ -56,10 +82,10 @@
 .homepage
 {
 	&.bg-1{
-		background-image: url(../images/bg/bg-1-1.jpg);			
+		background-image: url(../images/bg/homepage-bg-1-1.jpg);			
 	}
 	&.bg-2{
-		background-image: url(../images/bg/bg-1-2.jpg);			
+		background-image: url(../images/bg/homepage-bg-1-2.jpg);			
 	}
 
 	background-position: left 80px;
@@ -87,11 +113,44 @@
 
 
 .inner{
-	background-image: url(../images/bg/inner-bg.jpg);
+	// background-image: url(../images/bg/inner-bg.jpg);
 	background-position: left 80px;
-	&-history .main{
-		background-image: url(../images/bg/inner-bg-3.jpg);
+	&.bg-1{
+		background-image: url(../images/bg/inner-bg-1-1.jpg);
+	}
+	&.bg-2{
+		background-image: url(../images/bg/inner-bg-1-2.jpg);
+	}
+
+
+	&-history-1 .main{
+		background-image: url(../images/bg/inner-history-1-1.jpg);
 		background-position: right bottom 160px;
+	}
+	&-history-2 .main{
+		background-image: url(../images/bg/inner-history-1-2.jpg);
+		background-position: right bottom 160px;
+	}
+
+
+
+	&-bg-right,
+	&-news
+	{
+		// background-image: url(../images/bg/inner-bg-right.jpg);
+		background-position: right 80px
+	}
+
+	&-news,
+	&.bg-right{
+		// background-image: url(../images/bg/inner-bg-4.jpg);
+		// background-position: right 80px;
+		&-1{
+			background-image: url(../images/bg/inner-bg-4-1.jpg);
+		}
+		&-2{
+			background-image: url(../images/bg/inner-bg-4-2.jpg);
+		}
 	}
 }
 

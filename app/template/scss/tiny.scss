@@ -1,6 +1,12 @@
 @import 'fonts';
 @import 'colors'; 
 
+body{
+	font-family: Avanti;
+	font-size: 14px;
+	font-display: swap;
+}
+
 .tdn{
 	text-decoration: none;
 	&:hover{

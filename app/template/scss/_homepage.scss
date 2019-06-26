@@ -256,6 +256,9 @@
 	// news__list
 	.news__list{
 		margin-top: 1.5rem;
+		.single-carousel{
+			display: none !important;
+		}
 	}
 }
 

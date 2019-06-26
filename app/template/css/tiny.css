@@ -1,14 +1,19 @@
 @font-face {
   font-family: 'Avanti';
-  src: local("Avanti"), url("../fonts/Avanti/Avanti.woff2") format("woff2"), url("../fonts/Avanti/Avanti.woff") format("woff");
+  src: local("Avanti"), url("/template/fonts/Avanti/Avanti.woff2") format("woff2"), url("/template/fonts/Avanti/Avanti.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Avanti';
-  src: local("Avanti Bold"), local("AvantiBold"), url("../fonts/AvantiBold/AvantiBold.woff2") format("woff2"), url("../fonts/AvantiBold/AvantiBold.woff") format("woff");
+  src: local("Avanti Bold"), local("AvantiBold"), url("/template/fonts/AvantiBold/AvantiBold.woff2") format("woff2"), url("/template/fonts/AvantiBold/AvantiBold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
+
+body {
+  font-family: Avanti;
+  font-size: 14px;
+  font-display: swap; }
 
 .tdn {
   text-decoration: none; }

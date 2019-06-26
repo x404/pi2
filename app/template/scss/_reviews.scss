@@ -28,13 +28,16 @@
 			background-color: #848484;
 			background-image: linear-gradient(to right, #848484, #cacaca);
 			&:before{
-				content: "-";
+				content: "+";
+			}
+			&:hover{
+				background-image: linear-gradient(to right, $color4, #8bb2ba);
 			}
 		}
 
 		&:before{
 			border: none;
-			content: "+";
+			content: "-";
 			font-size: 3rem;
 			height: 15px;
 			left: auto;
