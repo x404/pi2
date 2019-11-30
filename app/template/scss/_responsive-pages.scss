@@ -9,6 +9,10 @@
 	.navmenu .subnav ul li{
 		margin-right: 1.4rem;
 		padding-right: 1.4rem;
+		&:last-child{
+			margin-right: 0;
+			padding-right: 0;
+		}
 	}
 }
 
